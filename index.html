@@ -73,6 +73,14 @@ a{text-decoration:none}
 .cp-footer p,.cp-footer a{font-size:13px;color:#64748b;line-height:1.9}
 @media(max-width:1000px){.cp-grid{grid-template-columns:repeat(2,1fr)}.cp-process,.cp-hero-inner,.cp-footer-inner,.cp-contact-inner{grid-template-columns:1fr}.cp-nav{display:none}.cp-hero h1{font-size:34px}}
 @media(max-width:640px){.cp-grid{grid-template-columns:1fr}.cp-header{padding:14px 18px}.cp-hero h1{font-size:30px}.cp-title{font-size:28px}.cp-cta h2{font-size:30px}}
+
+.cp-footer-logos{display:flex;gap:24px;align-items:center;margin-top:14px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}.cp-footer-logos::-webkit-scrollbar{display:none}.cp-footer-logos img{width:auto;object-fit:contain;flex-shrink:0}.cp-footer-logos img:nth-child(1){height:52px}.cp-footer-logos img:nth-child(2){height:58px}.cp-footer-logos img:nth-child(3){height:56px}.cp-footer-logos img:nth-child(4){height:44px}
+
+.cp-whatsapp{position:fixed;bottom:24px;right:24px;width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#25D366;box-shadow:0 18px 40px rgba(37,211,102,.35);z-index:9999;transition:.25s ease}.cp-whatsapp:hover{transform:scale(1.06)}.cp-whatsapp img{width:72px;height:72px;object-fit:contain}
+
+@media(max-width:1100px){.cp-hero-inner{grid-template-columns:1fr;gap:34px}.cp-grid{grid-template-columns:1fr 1fr}.cp-footer-inner{grid-template-columns:1fr 1fr;gap:40px}}
+
+@media(max-width:768px){body{overflow-x:hidden}.cp-header{padding:14px 18px}.cp-header-inner{flex-direction:column;align-items:flex-start;gap:18px}.cp-logo img{height:52px}.cp-nav{width:100%;overflow-x:auto;gap:18px;padding-bottom:4px;margin-left:0;scrollbar-width:none}.cp-nav::-webkit-scrollbar{display:none}.cp-nav a{font-size:14px;white-space:nowrap}.cp-hero{padding:36px 18px}.cp-hero-inner{grid-template-columns:1fr;gap:26px}.cp-hero h1{font-size:40px;line-height:1.05}.cp-hero p{font-size:16px;line-height:1.7}.cp-hero-buttons{flex-direction:column;width:100%}.cp-btn-primary,.cp-btn-secondary{width:100%;justify-content:center}.cp-side-card{padding:22px;border-radius:22px}.cp-side-item{padding:18px;font-size:15px}.cp-section{padding:56px 18px}.cp-title{font-size:34px}.cp-grid,.cp-footer-inner,.cp-process{grid-template-columns:1fr}.cp-footer{padding:56px 18px}.cp-footer-logos{gap:18px}.cp-footer-logos img:nth-child(1){height:42px}.cp-footer-logos img:nth-child(2){height:46px}.cp-footer-logos img:nth-child(3){height:44px}.cp-footer-logos img:nth-child(4){height:36px}.cp-whatsapp{width:62px;height:62px;bottom:18px;right:18px}.cp-whatsapp img{width:62px;height:62px}}
 </style>
 </head>
 <body>
@@ -217,11 +225,11 @@ a{text-decoration:none}
 <div>
 <img src="logo-cp.png" style="height:46px;margin-bottom:14px">
 <p style="margin-bottom:24px;">Doping e Toxicologia — Análise de drogas para empresas e pessoas físicas em todo o Brasil.</p>
-<div style="display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap;margin-top:10px;">
-  <img src="senatran-cor.png" style="height:52px;width:auto;object-fit:contain;">
-  <img src="sbac-cor.png" style="height:58px;width:auto;object-fit:contain;">
-  <img src="inmetro-cor.png" style="height:56px;width:auto;object-fit:contain;">
-  <img src="dicq-cor.png" style="height:48px;width:auto;object-fit:contain;">
+<div class="cp-footer-logos">
+  <img src="senatran-cor.png">
+  <img src="sbac-cor.png">
+  <img src="inmetro-cor.png">
+  <img src="dicq-cor.png">
 </div>
 </div>
 <div>
@@ -245,7 +253,7 @@ a{text-decoration:none}
 </div>
 </footer>
 
-<a href="#" style="position:fixed;bottom:24px;right:24px;width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#25D366;box-shadow:0 18px 40px rgba(37,211,102,.35);z-index:9999;transition:.25s ease;">
+<a href="#" class="cp-whatsapp">
 <img src="wpp-icon.png" style="width:72px;height:72px;object-fit:contain;display:block;">
 </a>
 </body>

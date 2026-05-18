@@ -31,9 +31,11 @@ a{text-decoration:none}
 .cp-btn-secondary{background:#fff;border:1px solid rgba(0,74,139,.14);color:#004A8B;padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer;transition:.25s ease}
 .cp-btn-secondary:hover{border-color:#07A9DC;color:#07A9DC;background:rgba(7,169,220,.04)}
 .cp-side-card{background:#fff;border:1px solid #dbe3ef;border-radius:24px;padding:22px;box-shadow:0 14px 40px rgba(15,23,42,.08);overflow:hidden}
-.cp-side-item{background:#004A8B;border:1px solid rgba(255,255,255,.08);padding:15px 16px;border-radius:14px;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;color:#fff;transition:.25s ease}
+.cp-side-item{background:linear-gradient(135deg,#0058a8 0%, #004A8B 100%);border:1px solid rgba(7,169,220,.18);padding:20px 20px;border-radius:18px;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;color:#fff;transition:.28s ease;cursor:pointer;position:relative;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.cp-side-item::before{content:'';position:absolute;top:0;left:-120%;width:120%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);transition:.5s ease}
+.cp-side-item:hover::before{left:120%}
 .cp-side-item:last-child{margin-bottom:0}
-.cp-side-item:hover{background:#07A9DC;transform:translateX(6px);border-color:#07A9DC;box-shadow:0 12px 26px rgba(7,169,220,.26);color:#fff}
+.cp-side-item:hover{background:linear-gradient(135deg,#07A9DC 0%, #4292D9 100%);transform:translateY(-3px) scale(1.015);border-color:#07A9DC;box-shadow:0 18px 36px rgba(7,169,220,.30);color:#fff}
 .cp-tag{background:#07A9DC;color:#fff;font-size:10px;padding:4px 9px;border-radius:20px;font-weight:800;letter-spacing:.02em}
 .cp-contact-strip{background:#2563eb;color:#fff;padding:14px 24px}
 .cp-contact-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;font-size:13px;font-weight:700}
@@ -113,10 +115,10 @@ a{text-decoration:none}
 <div style="font-size:32px;font-weight:900;line-height:1.1;color:#fff;margin-bottom:14px;">Exames rápidos e confiáveis.</div>
 <div style="font-size:15px;line-height:1.8;color:#cbd5e1;">Atendimento nacional para motoristas, empresas e concursos públicos.</div>
 </div>
-<div class="cp-side-item" style="background:#172554;border:1px solid rgba(255,255,255,.08);color:#fff;transition:.2s;cursor:pointer;">CNH Categorias A e B <span class="cp-tag">NOVO</span></div>
-<div class="cp-side-item" style="background:#172554;border:1px solid rgba(255,255,255,.08);color:#fff;transition:.2s;cursor:pointer;">CNH Categorias C, D e E</div>
-<div class="cp-side-item" style="background:#172554;border:1px solid rgba(255,255,255,.08);color:#fff;transition:.2s;cursor:pointer;">Toxicológico para Empresas</div>
-<div class="cp-side-item" style="background:#172554;border:1px solid rgba(255,255,255,.08);color:#fff;transition:.2s;cursor:pointer;">Toxicológico para Concursos</div>
+<div class="cp-side-item"><div><div style="font-size:17px;font-weight:800;margin-bottom:4px;">CNH Categorias A e B</div><div style="font-size:13px;color:#bfdbfe;font-weight:500;">Primeira habilitação e renovação</div></div><span class="cp-tag">NOVO</span></div>
+<div class="cp-side-item"><div><div style="font-size:17px;font-weight:800;margin-bottom:4px;">CNH Categorias C, D e E</div><div style="font-size:13px;color:#bfdbfe;font-weight:500;">Motoristas profissionais</div></div><i class="ti ti-arrow-right" style="font-size:22px;"></i></div>
+<div class="cp-side-item"><div><div style="font-size:17px;font-weight:800;margin-bottom:4px;">Toxicológico para Empresas</div><div style="font-size:13px;color:#bfdbfe;font-weight:500;">Gestão de exames corporativos</div></div><i class="ti ti-arrow-right" style="font-size:22px;"></i></div>
+<div class="cp-side-item"><div><div style="font-size:17px;font-weight:800;margin-bottom:4px;">Toxicológico para Concursos</div><div style="font-size:13px;color:#bfdbfe;font-weight:500;">Exames para processos seletivos</div></div><i class="ti ti-arrow-right" style="font-size:22px;"></i></div>
 </div>
 </div>
 </section>

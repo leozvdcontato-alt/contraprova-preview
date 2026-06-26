@@ -960,7 +960,7 @@ a {
 
     font-size:13px;
     font-weight:700;
-    
+
     box-shadow:0 8px 20px rgba(0,74,139,.20);
 }
 
@@ -983,6 +983,11 @@ a {
     color:#475569;
     font-size:15px;
     border-bottom:1px solid #eef2f7;
+}
+
+.featured-item{
+    color:#004A8B !important;
+    font-weight:700;
 }
 
 .plan-card li:last-child{

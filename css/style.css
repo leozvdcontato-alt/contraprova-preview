@@ -308,6 +308,11 @@ a {
     font-size: 22px
 }
 
+.cp-card-icon i {
+    font-size: 24px;
+    color: #004A8B;
+}
+
 .cp-card h3 {
     font-size: 16px;
     font-weight: 800;

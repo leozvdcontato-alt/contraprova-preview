@@ -950,7 +950,7 @@ a {
 .plan-badge{
     position:absolute;
     top:-14px;
-    left:32px;
+    right:24px;
 
     background:#004A8B;
     color:#fff;
@@ -960,9 +960,7 @@ a {
 
     font-size:13px;
     font-weight:700;
-
-    z-index:2;
-
+    
     box-shadow:0 8px 20px rgba(0,74,139,.20);
 }
 

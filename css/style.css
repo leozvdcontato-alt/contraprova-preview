@@ -988,6 +988,13 @@ a {
     color:#004A8B;
 }
 
+.plan-installment{
+    font-size:14px;
+    font-weight:700;
+    color:#0074D9;
+    margin-top:4px;
+}
+
 .plan-card .cp-btn-primary{
     width:100%;
     text-align:center;

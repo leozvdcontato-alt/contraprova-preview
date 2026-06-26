@@ -137,9 +137,11 @@ a {
 }
 
 .cp-hero-buttons .cp-btn-primary{
-    width:100%;
+    width:85%;
+    margin:0 auto;
+    display:block;
     text-align:center;
-    justify-content:center;
+    
 }
 
 .cp-btn-secondary {

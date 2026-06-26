@@ -138,10 +138,9 @@ a {
 
 .cp-hero-buttons .cp-btn-primary{
     width:85%;
-    margin:0 auto;
+    margin:0;
     display:block;
-    text-align:center;
-    
+
 }
 
 .cp-btn-secondary {

@@ -98,7 +98,7 @@ a {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.1fr .9fr;
-    gap: 60px;
+    gap: 36px;
     align-items: center
 }
 
@@ -1018,4 +1018,12 @@ a {
 .plan-card .cp-btn-primary{
     width:100%;
     text-align:center;
+}
+
+.cp-cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-top:32px;
 }

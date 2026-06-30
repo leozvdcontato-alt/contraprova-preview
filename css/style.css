@@ -16,6 +16,10 @@ a {
     text-decoration: none
 }
 
+/* =====================================
+   RESET
+===================================== */
+
 .cp-header-top {
     background: #0f172a;
     color: #fff;
@@ -31,6 +35,10 @@ a {
     gap: 20px;
     flex-wrap: wrap
 }
+
+/* =====================================
+   HEADER
+===================================== */
 
 .cp-header {
     background: #fff;
@@ -87,6 +95,10 @@ a {
     transform: translateY(-2px);
     box-shadow: 0 14px 30px rgba(0, 74, 139, .28);
 }
+
+/* =====================================
+   HERO
+===================================== */
 
 .cp-hero {
     background: #fff;
@@ -208,7 +220,7 @@ a {
     margin-bottom: 0
 }
 
-.cp-side-item:hover{
+.cp-side-item:hover {
     background: linear-gradient(135deg, #07A9DC 0%, #4292D9 100%);
     transform: translateY(-3px) scale(1.015);
     border-color: #07A9DC;
@@ -226,6 +238,10 @@ a {
     letter-spacing: .02em
 }
 
+/* =====================================
+   CONTATO RÁPIDO
+===================================== */
+
 .cp-contact-strip {
     background: #2563eb;
     color: #fff;
@@ -241,6 +257,10 @@ a {
     font-size: 13px;
     font-weight: 700
 }
+
+/* =====================================
+   SEÇÕES
+===================================== */
 
 .cp-section {
     padding: 72px 40px
@@ -407,6 +427,10 @@ a {
     border-color: #2563eb
 }
 
+/* =====================================
+   FAQ
+===================================== */
+
 .cp-faq {
     background: #fff;
     border: 1px solid #e2e8f0;
@@ -445,6 +469,10 @@ a {
     color: #cbd5e1;
     line-height: 1.7
 }
+
+/* =====================================
+   FOOTER
+===================================== */
 
 .cp-footer {
     background: #fff;
@@ -857,6 +885,10 @@ a {
     }
 }
 
+/* =====================================
+   ESCOLHER EXAME
+===================================== */
+
 .exam-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -928,18 +960,18 @@ a {
     margin-top: 40px;
 }
 
-.plan-card{
-    background:#fff;
-    border:1px solid #dbe3ef;
-    border-radius:28px;
-    padding:28px;
-    display:flex;
-    flex-direction:column;
-    min-height:460px;
-    position:relative;
-    transition:.25s ease;
-    text-decoration:none;
-    color:inherit;
+.plan-card {
+    background: #fff;
+    border: 1px solid #dbe3ef;
+    border-radius: 28px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    min-height: 460px;
+    position: relative;
+    transition: .25s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .plan-card:hover {
@@ -948,9 +980,9 @@ a {
     border-color: #004A8B;
 }
 
-.plan-card.featured{
-    border:2px solid #004A8B;
-    box-shadow:0 18px 40px rgba(0,74,139,.12);
+.plan-card.featured {
+    border: 2px solid #004A8B;
+    box-shadow: 0 18px 40px rgba(0, 74, 139, .12);
 }
 
 .plan-card-wrapper {
@@ -1004,11 +1036,11 @@ a {
     border-bottom: none;
 }
 
-.plan-price-label{
-    font-size:11px;
-    font-weight:600;
-    color:#64748b;
-    margin-bottom:-2px;
+.plan-price-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: -2px;
 }
 
 .plan-price {
@@ -1039,29 +1071,19 @@ a {
     margin-top: 32px;
 }
 
-.cp-side-item{
-    transition: .25s ease;
-    cursor: pointer;
+.cp-side-item i {
+transition: .25s ease;
 }
 
-.cp-side-item:hover{
-    transform: translateY(-3px);
-    background: linear-gradient(135deg, #0063b8 0%, #00539c 100%);
-}
-
-.cp-side-item i{
-    transition: .25s ease;
-}
-
-.cp-side-item:hover i{
+.cp-side-item:hover i {
     transform: translateX(6px);
 }
 
-.featured-btn{
+.featured-btn {
     background: linear-gradient(135deg, #0058A8 0%, #003F7A 100%);
-    box-shadow: 0 12px 26px rgba(0,74,139,.22);
+    box-shadow: 0 12px 26px rgba(0, 74, 139, .22);
 }
 
-.featured-btn:hover{
+.featured-btn:hover {
     background: linear-gradient(135deg, #0067C2 0%, #004A8B 100%);
 }

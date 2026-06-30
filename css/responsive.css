@@ -1,0 +1,324 @@
+@media(max-width:1000px) {
+    .cp-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    
+    
+    @media(max-width:640px) {
+    .cp-grid {
+        grid-template-columns: 1fr
+    }
+
+    .cp-header {
+        padding: 14px 18px
+    }
+
+    .cp-hero h1 {
+        font-size: 30px
+    }
+
+    .cp-title {
+        font-size: 28px
+    }
+
+    .cp-cta h2 {
+        font-size: 30px
+    }
+}
+
+@media(max-width:1100px) {
+    .cp-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 34px
+    }
+
+    .cp-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .cp-footer-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        overflow-x: hidden
+    }
+
+    .cp-header-top {
+        padding: 14px 18px
+    }
+
+    .cp-header-top-inner {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 13px
+    }
+
+    .cp-header {
+        padding: 16px 18px
+    }
+
+    .cp-header-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px
+    }
+
+    .cp-logo img {
+        height: 54px
+    }
+
+    .cp-nav {
+        display: none
+    }
+
+    .cp-header .cp-btn-primary {
+        padding: 14px 18px;
+        font-size: 14px;
+        white-space: nowrap;
+        border-radius: 14px
+    }
+
+    .cp-hero {
+        padding: 28px 18px 42px
+    }
+
+    .cp-hero-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 22px
+    }
+
+    .cp-badge {
+        font-size: 11px;
+        line-height: 1.5;
+        padding: 10px 14px;
+        border-radius: 18px
+    }
+
+    .cp-hero h1 {
+        font-size: 52px;
+        line-height: .95;
+        letter-spacing: -.04em;
+        margin-bottom: 18px
+    }
+
+    .cp-hero p {
+        font-size: 18px;
+        line-height: 1.75;
+        margin-bottom: 24px
+    }
+
+    .cp-hero>div,
+    .cp-hero-inner>div {
+        width: 100%
+    }
+
+    .cp-hero-inner>div:first-child>div[style*='display:flex;gap:12px'] {
+        flex-direction: column;
+        gap: 14px !important
+    }
+
+    .cp-hero-inner>div:first-child>div[style*='display:flex;gap:12px']>div {
+        width: 100%;
+        min-width: 100% !important
+    }
+
+    .cp-hero-inner>div:first-child>div[style*='display:flex;gap:18px'] {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 10px !important
+    }
+
+    .cp-hero-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+
+    .cp-btn-primary,
+    .cp-btn-secondary {
+        width: 100%;
+        justify-content: center;
+        min-height: 56px;
+        font-size: 15px
+    }
+
+    .cp-side-card {
+        padding: 22px;
+        border-radius: 24px
+    }
+
+    .cp-side-card>div:first-child div:first-child {
+        font-size: 30px !important;
+        line-height: 1.05 !important
+    }
+
+    .cp-side-item {
+        padding: 18px;
+        border-radius: 18px
+    }
+
+    .cp-side-item div div:first-child {
+        font-size: 16px !important;
+        line-height: 1.2
+    }
+
+    .cp-side-item div div:last-child {
+        font-size: 12px !important
+    }
+
+    .cp-section.gray>div:first-child {
+        height: 520px !important
+    }
+
+    .cp-section.gray>div:first-child div[style*='padding:50px'] {
+        padding: 28px !important;
+        align-items: flex-start !important;
+        padding-top: 34px !important
+    }
+
+    .cp-section.gray>div:first-child div[style*='font-size:42px'] {
+        font-size: 68px !important;
+        line-height: .9 !important;
+        letter-spacing: -.05em;
+        max-width: 100% !important
+    }
+
+    .cp-section.gray>div:first-child div[style*='font-size:16px'] {
+        font-size: 18px !important;
+        line-height: 1.6 !important;
+        margin-top: 18px
+    }
+
+    .cp-section {
+        padding: 58px 18px
+    }
+
+    .cp-title {
+        font-size: 48px;
+        line-height: .98;
+        letter-spacing: -.04em
+    }
+
+    .cp-sub {
+        font-size: 18px;
+        line-height: 1.8
+    }
+
+    .cp-grid {
+        grid-template-columns: 1fr;
+        gap: 18px
+    }
+
+    .cp-card {
+        padding: 24px
+    }
+
+    .cp-card h3 {
+        font-size: 20px
+    }
+
+    .cp-card p {
+        font-size: 15px
+    }
+
+    .cp-process {
+        grid-template-columns: 1fr;
+        gap: 30px
+    }
+
+    .cp-image-box {
+        min-height: 380px;
+        padding: 28px
+    }
+
+    .cp-image-box div[style*='font-size:30px'] {
+        font-size: 36px !important
+    }
+
+    .cp-faq {
+        padding: 22px
+    }
+
+    .cp-faq h4 {
+        font-size: 17px
+    }
+
+    .cp-cta {
+        padding: 64px 18px
+    }
+
+    .cp-cta h2 {
+        font-size: 46px;
+        line-height: .98
+    }
+
+    .cp-cta p {
+        font-size: 18px
+    }
+
+    .cp-footer {
+        padding: 48px 18px 120px
+    }
+
+    .cp-footer-inner {
+        grid-template-columns: 1fr;
+        gap: 34px
+    }
+
+    .cp-footer-logos {
+        gap: 18px
+    }
+
+    .cp-footer-logos img:nth-child(1) {
+        height: 42px
+    }
+
+    .cp-footer-logos img:nth-child(2) {
+        height: 46px
+    }
+
+    .cp-footer-logos img:nth-child(3) {
+        height: 44px
+    }
+
+    .cp-footer-logos img:nth-child(4) {
+        height: 34px
+    }
+
+    .cp-whatsapp {
+        width: 72px;
+        height: 72px;
+        bottom: 88px;
+        right: 18px
+    }
+
+    .cp-whatsapp img {
+        width: 72px;
+        height: 72px
+    }
+}
+
+@media(max-width:768px) {
+
+    .exam-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .exam-card {
+        padding: 24px;
+    }
+
+    .exam-card span {
+        font-size: 20px;
+    }
+   
+    
+}

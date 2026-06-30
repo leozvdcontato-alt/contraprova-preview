@@ -1237,3 +1237,86 @@ a {
     border-radius:20px;
     padding:28px;
 }
+
+/* ==========================
+   UNIDADES
+========================== */
+
+.units-layout{
+    display:grid;
+    grid-template-columns:40% 60%;
+    gap:32px;
+    align-items:start;
+}
+
+.units-map{
+    position:sticky;
+    top:120px;
+}
+
+.map-placeholder{
+    height:650px;
+    background:#e5e7eb;
+    border-radius:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#64748b;
+    font-weight:700;
+}
+
+.units-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.unit-card{
+    background:#fff;
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+    padding:28px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    transition:.25s;
+}
+
+.unit-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 16px 40px rgba(15,23,42,.08);
+}
+
+.unit-card h3{
+    font-size:24px;
+    margin-bottom:8px;
+    color:#0f172a;
+}
+
+.unit-card p{
+    font-weight:600;
+    color:#475569;
+    margin-bottom:8px;
+}
+
+.unit-card span{
+    color:#64748b;
+}
+
+.unit-price{
+    text-align:right;
+    min-width:180px;
+}
+
+.unit-price strong{
+    display:block;
+    font-size:34px;
+    color:#004A8B;
+}
+
+.unit-price small{
+    display:block;
+    margin:8px 0 18px;
+    color:#64748b;
+}

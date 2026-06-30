@@ -83,8 +83,9 @@ a {
 }
 
 .cp-btn-primary:hover {
-    background: #0074D9;
-    transform: translateY(-1px)
+    background: #0A5DAA;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(0, 74, 139, .28);
 }
 
 .cp-hero {
@@ -131,15 +132,15 @@ a {
     margin-bottom: 28px
 }
 
-.cp-hero-buttons{
-    width:100%;
-    margin:18px 0;
+.cp-hero-buttons {
+    width: 100%;
+    margin: 18px 0;
 }
 
-.cp-hero-buttons .cp-btn-primary{
-    width:85%;
-    margin:0;
-    display:block;
+.cp-hero-buttons .cp-btn-primary {
+    width: 85%;
+    margin: 0;
+    display: block;
 
 }
 
@@ -172,7 +173,7 @@ a {
 .cp-side-item {
     background: linear-gradient(135deg, #0058a8 0%, #004A8B 100%);
     border: 1px solid rgba(7, 169, 220, .18);
-    padding: 20px 20px;
+    padding: 20px;
     border-radius: 18px;
     font-size: 16px;
     font-weight: 800;
@@ -181,11 +182,11 @@ a {
     justify-content: space-between;
     margin-bottom: 14px;
     color: #fff;
-    transition: .28s ease;
-    cursor: pointer;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, .18)
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .18);
+    transition: .25s ease;
+    cursor: pointer;
 }
 
 .cp-side-item::before {
@@ -207,7 +208,7 @@ a {
     margin-bottom: 0
 }
 
-.cp-side-item:hover {
+.cp-side-item:hover{
     background: linear-gradient(135deg, #07A9DC 0%, #4292D9 100%);
     transform: translateY(-3px) scale(1.015);
     border-color: #07A9DC;
@@ -242,7 +243,7 @@ a {
 }
 
 .cp-section {
-    padding: 80px 40px
+    padding: 72px 40px
 }
 
 .cp-section.white {
@@ -856,62 +857,62 @@ a {
     }
 }
 
-.exam-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:50px 40px;
-    max-width:1100px;
-    margin:0 auto;
+.exam-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.exam-option p{
-    margin-top:14px;
-    font-size:15px;
-    line-height:1.8;
-    color:#64748b;
+.exam-option p {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #64748b;
 }
 
-.exam-card{
-    background:#fff;
-    border:1px solid #dbe3ef;
-    border-radius:18px;
-    padding:28px 30px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    color:#0f172a;
-    transition:.25s ease;
+.exam-card {
+    background: #fff;
+    border: 1px solid #dbe3ef;
+    border-radius: 18px;
+    padding: 28px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0f172a;
+    transition: .25s ease;
 }
 
-.exam-card span{
-    font-size:22px;
-    font-weight:800;
+.exam-card span {
+    font-size: 22px;
+    font-weight: 800;
 }
 
-.exam-card i{
-    font-size:24px;
-    color:#004A8B;
+.exam-card i {
+    font-size: 24px;
+    color: #004A8B;
 }
 
-.exam-card:hover{
-    transform:translateY(-4px);
-    border-color:#004A8B;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
+.exam-card:hover {
+    transform: translateY(-4px);
+    border-color: #004A8B;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    .exam-grid{
-        grid-template-columns:1fr;
-        gap:30px;
+    .exam-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 
-    .exam-card{
-        padding:24px;
+    .exam-card {
+        padding: 24px;
     }
 
-    .exam-card span{
-        font-size:20px;
+    .exam-card span {
+        font-size: 20px;
     }
 
 }
@@ -920,110 +921,147 @@ a {
    ESCOLHER EXAME
 ===================================== */
 
-.plans-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:24px;
-    margin-top:40px;
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 40px;
 }
 
 .plan-card{
     background:#fff;
     border:1px solid #dbe3ef;
-    border-radius:24px;
+    border-radius:28px;
     padding:28px;
     display:flex;
     flex-direction:column;
     min-height:460px;
     position:relative;
     transition:.25s ease;
+    text-decoration:none;
+    color:inherit;
 }
 
-.plan-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 18px 40px rgba(15,23,42,.08);
-    border-color:#004A8B;
+.plan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 48px rgba(15, 23, 42, .12);
+    border-color: #004A8B;
 }
 
 .plan-card.featured{
     border:2px solid #004A8B;
+    box-shadow:0 18px 40px rgba(0,74,139,.12);
 }
 
-.plan-card-wrapper{
-    position:relative;
+.plan-card-wrapper {
+    position: relative;
 }
 
-.plan-badge{
-    position:absolute;
-    top:-14px;
-    right:24px;
+.plan-badge {
+    position: absolute;
+    top: -14px;
+    right: 24px;
 
-    background:#004A8B;
-    color:#fff;
+    background: #004A8B;
+    color: #fff;
 
-    padding:8px 14px;
-    border-radius:999px;
+    padding: 8px 14px;
+    border-radius: 999px;
 
-    font-size:13px;
-    font-weight:700;
+    font-size: 13px;
+    font-weight: 700;
 
-    box-shadow:0 8px 20px rgba(0,74,139,.20);
+    box-shadow: 0 8px 20px rgba(0, 74, 139, .20);
 }
 
-.plan-card h3{
-    font-size:26px;
-    font-weight:900;
-    color:#0f172a;
-    margin-bottom:24px;
-    line-height:1.1;
+.plan-card h3 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 24px;
+    line-height: 1.1;
 }
 
-.plan-card ul{
-    list-style:none;
-    padding:0;
-    margin:0 0 30px 0;
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
 }
 
-.plan-card li{
-    padding:10px 0;
-    color:#475569;
-    font-size:15px;
-    border-bottom:1px solid #eef2f7;
+.plan-card li {
+    padding: 10px 0;
+    color: #475569;
+    font-size: 15px;
+    border-bottom: 1px solid #eef2f7;
 }
 
-.featured-item{
-    color:#004A8B !important;
-    font-weight:700;
+.featured-item {
+    color: #004A8B !important;
+    font-weight: 700;
 }
 
-.plan-card li:last-child{
-    border-bottom:none;
+.plan-card li:last-child {
+    border-bottom: none;
 }
 
-.plan-price{
-    margin-top:auto;
-    margin-bottom:24px;
-    font-size:20px;
-    font-weight:800;
-    color:#004A8B;
+.plan-price-label{
+    font-size:11px;
+    font-weight:600;
+    color:#64748b;
+    margin-bottom:-2px;
 }
 
-.plan-installment{
-    font-size:14px;
-    font-weight:700;
-    color:#0074D9;
-    margin-top:4px;
+.plan-price {
+    margin-top: auto;
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #004A8B;
 }
 
-.plan-card .cp-btn-primary{
-    width:100%;
-    text-align:center;
+.plan-installment {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0074D9;
+    margin-top: 4px;
 }
 
-.cp-cta-buttons{
-    display:flex;
-    justify-content:center;
-    gap:18px;
-    flex-wrap:wrap;
-    margin-top:32px;
+.plan-card .cp-btn-primary {
+    width: 100%;
+    text-align: center;
+}
+
+.cp-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.cp-side-item{
+    transition: .25s ease;
+    cursor: pointer;
+}
+
+.cp-side-item:hover{
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #0063b8 0%, #00539c 100%);
+}
+
+.cp-side-item i{
+    transition: .25s ease;
+}
+
+.cp-side-item:hover i{
+    transform: translateX(6px);
+}
+
+.featured-btn{
+    background: linear-gradient(135deg, #0058A8 0%, #003F7A 100%);
+    box-shadow: 0 12px 26px rgba(0,74,139,.22);
+}
+
+.featured-btn:hover{
+    background: linear-gradient(135deg, #0067C2 0%, #004A8B 100%);
 }

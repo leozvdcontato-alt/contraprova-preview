@@ -71,28 +71,28 @@ const dados = {
 
         unidades: [
             {
-                nome:"Angralab",
-                endereco:"Rua Tavares de Macedo, 95",
-                telefone:"(21) 2714-2090",
-                preco:125
+                nome: "Angralab",
+                endereco: "Rua Tavares de Macedo, 95",
+                telefone: "(21) 2714-2090",
+                preco: 125
             },
             {
-                nome:"Villela Pedras",
-                endereco:"Rua Lopes Trovão, 390",
-                telefone:"(21) 3511-8181",
-                preco:140
+                nome: "Villela Pedras",
+                endereco: "Rua Lopes Trovão, 390",
+                telefone: "(21) 3511-8181",
+                preco: 140
             },
             {
-                nome:"Policlínica Centro da Dor",
-                endereco:"Rua Gavião Peixoto, 340",
-                telefone:"(21) 2610-3338",
-                preco:170
+                nome: "Policlínica Centro da Dor",
+                endereco: "Rua Gavião Peixoto, 340",
+                telefone: "(21) 2610-3338",
+                preco: 170
             },
             {
-                nome:"Pascual Saúde",
-                endereco:"Rua Cel. Moreira César, 26",
-                telefone:"(21) 2722-2276",
-                preco:199
+                nome: "Pascual Saúde",
+                endereco: "Rua Cel. Moreira César, 26",
+                telefone: "(21) 2722-2276",
+                preco: 199
             }
         ]
 
@@ -107,10 +107,33 @@ const local = document.getElementById("localizacao-atual");
 const bairroSelect = document.getElementById("bairro");
 const estadoSelect = document.getElementById("estado");
 const cidadeSelect = document.getElementById("cidade");
+const ordenacaoSelect = document.querySelector(".units-sort");
 
 function renderizar(bairro) {
 
     const info = dados[bairro];
+
+    let unidades = [...info.unidades];
+
+    if (ordenacaoSelect.value === "Menor preço") {
+
+        unidades.sort((a, b) => a.preco - b.preco);
+
+    }
+
+    if (ordenacaoSelect.value === "Maior preço") {
+
+        unidades.sort((a, b) => b.preco - a.preco);
+
+    }
+
+    if (ordenacaoSelect.value === "Mais próximo") {
+
+        // Futuramente:
+        // ordenar pela distância retornada pela API
+        // ou pela geolocalização do usuário.
+
+    }
 
     total.textContent = `${info.total} unidades encontradas`;
     local.textContent = info.local;
@@ -118,7 +141,7 @@ function renderizar(bairro) {
 
     lista.innerHTML = "";
 
-    info.unidades.forEach(unidade => {
+    unidades.forEach(unidade => {
 
         lista.innerHTML += `
 
@@ -148,9 +171,9 @@ function renderizar(bairro) {
 
                 <small>5x sem juros</small>
 
-                <a href="#" class="cp-btn-primary">
-                    Comprar
-                </a>
+                <a href="dados.html?posto=${encodeURIComponent(unidade.nome)}&endereco=${encodeURIComponent(unidade.endereco)}&telefone=${encodeURIComponent(unidade.telefone)}&preco=${unidade.preco}" class="cp-btn-primary">
+    Comprar
+</a>
 
             </div>
 
@@ -163,6 +186,12 @@ function renderizar(bairro) {
 }
 
 bairroSelect.addEventListener("change", () => {
+
+    renderizar(bairroSelect.value);
+
+});
+
+ordenacaoSelect.addEventListener("change", () => {
 
     renderizar(bairroSelect.value);
 

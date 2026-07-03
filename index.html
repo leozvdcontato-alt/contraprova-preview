@@ -31,20 +31,20 @@
     <div class="cp-header-inner">
       <div class="cp-logo"><img src="imagens/logos/logo-cp.png"></div>
       <nav class="cp-nav">
-        <a href="#">Início</a>
-        <a href="#">Exames</a>
-        <a href="#">Empresas</a>
-        <a href="#">Concursos</a>
-        <a href="#">Notícias</a>
-        <a href="#">Contato</a>
-      </nav>
+    <a href="#hero">Início</a>
+    <a href="/escolher-exame.html">Exames</a>
+    <a href="#consulta">Consultar resultado</a>
+    <a href="#parceiro">Seja parceiro</a>
+    <a href="#noticias">Notícias</a>
+    <a href="#contato">Contato</a>
+</nav>
       <a href="escolher-exame.html" class="cp-btn-primary">
         Escolher meu exame
       </a>
     </div>
   </header>
 
-  <section class="cp-hero">
+  <section id="hero" class="cp-hero">
     <div class="cp-hero-inner">
       <div>
         <div class="cp-badge">Credenciado SENATRAN • Atendimento nacional</div>
@@ -290,7 +290,98 @@ border-left:1px solid #eef2f7; flex:1;max-width:380px;">
     </div>
   </section>
 
-  <section class="cp-section gray">
+<section class="cp-section gray">
+
+    <div class="cp-container">
+
+        <div class="cp-label">
+            Recursos rápidos
+        </div>
+
+        <h2 class="cp-title">
+            Tudo o que você precisa em um só lugar
+        </h2>
+
+        <p class="cp-sub">
+            Consulte seu resultado ou faça parte da nossa rede de unidades credenciadas.
+        </p>
+
+        <div class="cp-resource-grid">
+
+            <!-- CONSULTA -->
+
+            <div id="consulta" class="cp-resource-card">
+
+                <div class="cp-resource-icon">
+                    <i class="ti ti-flask"></i>
+                </div>
+
+                <h3>Consultar resultado</h3>
+
+                <p>
+                    Digite os dados abaixo para consultar o resultado do seu exame.
+                </p>
+
+                <input
+                    type="text"
+                    placeholder="Código da amostra">
+
+                <input
+                    type="text"
+                    placeholder="CPF do doador">
+
+                <button class="cp-btn-primary">
+                    Consultar resultado
+                </button>
+
+            </div>
+
+            <!-- PARCEIRO -->
+
+            <div id="parceiro" class="cp-resource-card">
+
+                <div class="cp-resource-icon">
+                    <i class="ti ti-building-community"></i>
+                </div>
+
+                <h3>Seja um posto parceiro</h3>
+
+                <p>
+                    Faça parte da rede credenciada Contraprova e amplie seus serviços com o suporte de um laboratório referência nacional.
+                </p>
+
+                <ul class="cp-resource-list">
+
+                    <li>
+                        <i class="ti ti-check"></i>
+                        Atendimento em todo o Brasil
+                    </li>
+
+                    <li>
+                        <i class="ti ti-check"></i>
+                        Suporte comercial especializado
+                    </li>
+
+                    <li>
+                        <i class="ti ti-check"></i>
+                        Credenciamento rápido
+                    </li>
+
+                </ul>
+
+                <a href="#" class="cp-btn-primary">
+                    Quero ser parceiro
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <section id="noticias" class="cp-section gray">
     <div class="cp-container">
       <div class="cp-label">Notícias</div>
       <h2 class="cp-title">Últimas notícias</h2>
@@ -335,7 +426,7 @@ border-left:1px solid #eef2f7; flex:1;max-width:380px;">
     </div>
   </section>
 
-  <footer class="cp-footer">
+  <footer id="contato" class="cp-footer">
     <div class="cp-footer-inner">
       <div>
         <img src="imagens/logos/logo-cp.png" style="height:46px;margin-bottom:14px">

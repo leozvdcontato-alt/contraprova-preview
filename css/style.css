@@ -1775,3 +1775,123 @@ a {
 .confirm-back:hover{
     text-decoration: underline;
 }
+
+.cp-resource-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:32px;
+    margin-top:48px;
+
+}
+
+.cp-resource-card{
+
+    background:#fff;
+    border:1px solid #e7edf5;
+    border-radius:24px;
+    padding:36px;
+
+}
+
+.cp-resource-icon{
+
+    width:72px;
+    height:72px;
+    border-radius:18px;
+    background:#eef6ff;
+    color:#004A8B;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+    margin-bottom:24px;
+
+}
+
+.cp-resource-card h3{
+
+    font-size:28px;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:14px;
+
+}
+
+.cp-resource-card p{
+
+    color:#64748b;
+    line-height:1.7;
+    margin-bottom:28px;
+
+}
+
+.cp-resource-card input{
+
+    width:100%;
+    height:56px;
+    border:1px solid #dbe3ef;
+    border-radius:14px;
+    padding:0 18px;
+    font-size:15px;
+    margin-bottom:16px;
+    font-family:Poppins,sans-serif;
+
+}
+
+.cp-resource-card .cp-btn-primary{
+
+    margin-top:8px;
+    width:100%;
+    text-align:center;
+    justify-content:center;
+
+}
+
+.cp-resource-list{
+
+    list-style:none;
+    margin:0 0 28px;
+    padding:0;
+
+}
+
+.cp-resource-list li{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#334155;
+    margin-bottom:16px;
+    font-weight:500;
+
+}
+
+.cp-resource-list i{
+
+    color:#07A9DC;
+    font-size:18px;
+
+}
+
+@media(max-width:900px){
+
+    .cp-resource-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+#hero,
+#consulta,
+#parceiro,
+#noticias,
+#contato{
+    scroll-margin-top: 335px;
+}

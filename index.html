@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
   <title>Contraprova</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
@@ -16,7 +16,7 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pages.css">
-<link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -33,192 +33,217 @@
     <div class="cp-header-inner">
       <div class="cp-logo"><img src="imagens/logos/logo-cp.png"></div>
       <nav class="cp-nav">
-    <a href="#hero">Início</a>
-    <a href="/escolher-exame.html">Exames</a>
-    <a href="#consulta">Consultar resultado</a>
-    <a href="#parceiro">Seja parceiro</a>
-    <a href="#noticias">Notícias</a>
-    <a href="#contato">Contato</a>
-</nav>
-      <a href="escolher-exame.html" class="cp-btn-primary hero-main-btn">
-    Escolher meu exame
-</a>
+        <a href="#hero">Início</a>
+        <a href="/escolher-exame.html">Exames</a>
+        <a href="#consulta">Consultar resultado</a>
+        <a href="#parceiro">Seja parceiro</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="cp-menu-toggle">
+        <i class="ti ti-menu-2"></i>
+      </button>
     </div>
   </header>
 
-<section id="hero" class="cp-hero">
+  <div class="cp-mobile-overlay"></div>
+
+  <aside class="cp-mobile-menu">
+
+    <button class="cp-mobile-close">
+      <i class="ti ti-x"></i>
+    </button>
+
+    <nav class="cp-mobile-nav">
+
+      <a href="#hero">Início</a>
+      <a href="escolher-exame.html">Exames</a>
+      <a href="#consulta">Consultar resultado</a>
+      <a href="#parceiro">Seja parceiro</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#contato">Contato</a>
+
+    </nav>
+
+    <a href="escolher-exame.html" class="cp-btn-primary">
+      Escolher meu exame
+    </a>
+
+  </aside>
+
+  <section id="hero" class="cp-hero">
 
     <div class="cp-hero-inner">
 
-        <div class="cp-hero-content">
+      <div class="cp-hero-content">
 
-            <div class="cp-badge">
-                Credenciado SENATRAN • Atendimento nacional
-            </div>
+        <div class="cp-badge">
+          Credenciado SENATRAN • Atendimento nacional
+        </div>
 
-            <h1>
-                Exame toxicológico com agilidade e suporte imediato.
-            </h1>
+        <h1>
+          Exame toxicológico com agilidade e suporte imediato.
+        </h1>
 
-            <p>
-                Atendimento para categorias A, B, C, D e E com processo simples,
-                pagamento facilitado e rede credenciada em todo o Brasil.
-            </p>
+        <p>
+          Atendimento para categorias A, B, C, D e E com processo simples,
+          pagamento facilitado e rede credenciada em todo o Brasil.
+        </p>
 
-            <div class="hero-price">
+        <div class="hero-price">
 
-                <div class="hero-price-card">
+          <div class="hero-price-card">
 
-                    <span class="hero-price-label">
-                        A partir de
-                    </span>
+            <span class="hero-price-label">
+              A partir de
+            </span>
 
-                    <strong class="hero-price-value">
-                        R$ 119,90
-                    </strong>
+            <strong class="hero-price-value">
+              R$ 119,90
+            </strong>
 
-                    <span class="hero-price-installments">
-                        5x sem juros
-                    </span>
+            <span class="hero-price-installments">
+              5x sem juros
+            </span>
 
-                </div>
+          </div>
 
-                <div class="hero-payment-card">
+          <div class="hero-payment-card">
 
-                    <span class="hero-payment-label">
-                        Pagamento facilitado
-                    </span>
+            <span class="hero-payment-label">
+              Pagamento facilitado
+            </span>
 
-                    <strong class="hero-payment-value">
-                        PIX, boleto e cartão
-                    </strong>
+            <strong class="hero-payment-value">
+              PIX, boleto e cartão
+            </strong>
 
-                </div>
-
-            </div>
-
-            <div class="cp-hero-buttons">
-
-                <a href="escolher-exame.html" class="cp-btn-primary hero-main-btn">
-                    Escolher meu exame
-                </a>
-
-            </div>
-
-            <div class="hero-benefits">
-
-                <div class="hero-benefit">
-                    <span class="hero-dot"></span>
-                    Resultado rápido
-                </div>
-
-                <div class="hero-benefit">
-                    <span class="hero-dot"></span>
-                    Atendimento humanizado
-                </div>
-
-                <div class="hero-benefit">
-                    <span class="hero-dot"></span>
-                    Rede credenciada
-                </div>
-
-            </div>
+          </div>
 
         </div>
 
-        <div class="cp-side-card hero-card">
+        <div class="cp-hero-buttons">
 
-            <div class="hero-card-header">
-
-                <h2>
-                    Escolha o tipo do seu exame
-                </h2>
-
-                <p>
-                    Atendimento simples, rápido e com pagamento facilitado.
-                </p>
-
-            </div>
-
-            <a href="paginas/ab.html" class="cp-side-item">
-
-                <div>
-
-                    <div class="hero-card-title">
-                        Primeira habilitação • Categorias A e B
-                    </div>
-
-                    <div class="hero-card-subtitle">
-                        Primeira emissão e mudança de categoria
-                    </div>
-
-                </div>
-
-                <span class="cp-tag">
-                    NOVA EXIGÊNCIA
-                </span>
-
-            </a>
-
-            <div class="cp-side-item">
-
-                <div>
-
-                    <div class="hero-card-title">
-                        Motorista profissional • Categorias C, D e E
-                    </div>
-
-                    <div class="hero-card-subtitle">
-                        Admissional, demissional e renovação
-                    </div>
-
-                </div>
-
-                <i class="ti ti-arrow-right hero-arrow"></i>
-
-            </div>
-
-            <div class="cp-side-item">
-
-                <div>
-
-                    <div class="hero-card-title">
-                        Empresas
-                    </div>
-
-                    <div class="hero-card-subtitle">
-                        Gestão de exames para eSocial
-                    </div>
-
-                </div>
-
-                <i class="ti ti-arrow-right hero-arrow"></i>
-
-            </div>
-
-            <div class="cp-side-item">
-
-                <div>
-
-                    <div class="hero-card-title">
-                        Concursos públicos
-                    </div>
-
-                    <div class="hero-card-subtitle">
-                        Polícia Federal, PRF e Forças Armadas e muito mais!
-                    </div>
-
-                </div>
-
-                <i class="ti ti-arrow-right hero-arrow"></i>
-
-            </div>
+          <a href="escolher-exame.html" class="cp-btn-primary hero-main-btn">
+            Escolher meu exame
+          </a>
 
         </div>
+
+        <div class="hero-benefits">
+
+          <div class="hero-benefit">
+            <span class="hero-dot"></span>
+            Resultado rápido
+          </div>
+
+          <div class="hero-benefit">
+            <span class="hero-dot"></span>
+            Atendimento humanizado
+          </div>
+
+          <div class="hero-benefit">
+            <span class="hero-dot"></span>
+            Rede credenciada
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="cp-side-card hero-card">
+
+        <div class="hero-card-header">
+
+          <h2>
+            Escolha o tipo do seu exame
+          </h2>
+
+          <p>
+            Atendimento simples, rápido e com pagamento facilitado.
+          </p>
+
+        </div>
+
+        <a href="paginas/ab.html" class="cp-side-item">
+
+          <div>
+
+            <div class="hero-card-title">
+              Primeira habilitação • Categorias A e B
+            </div>
+
+            <div class="hero-card-subtitle">
+              Primeira emissão e mudança de categoria
+            </div>
+
+          </div>
+
+          <span class="cp-tag">
+            NOVA EXIGÊNCIA
+          </span>
+
+        </a>
+
+        <div class="cp-side-item">
+
+          <div>
+
+            <div class="hero-card-title">
+              Motorista profissional • Categorias C, D e E
+            </div>
+
+            <div class="hero-card-subtitle">
+              Admissional, demissional e renovação
+            </div>
+
+          </div>
+
+          <i class="ti ti-arrow-right hero-arrow"></i>
+
+        </div>
+
+        <div class="cp-side-item">
+
+          <div>
+
+            <div class="hero-card-title">
+              Empresas
+            </div>
+
+            <div class="hero-card-subtitle">
+              Gestão de exames para eSocial
+            </div>
+
+          </div>
+
+          <i class="ti ti-arrow-right hero-arrow"></i>
+
+        </div>
+
+        <div class="cp-side-item">
+
+          <div>
+
+            <div class="hero-card-title">
+              Concursos públicos
+            </div>
+
+            <div class="hero-card-subtitle">
+              Polícia Federal, PRF e Forças Armadas e muito mais!
+            </div>
+
+          </div>
+
+          <i class="ti ti-arrow-right hero-arrow"></i>
+
+        </div>
+
+      </div>
 
     </div>
 
-</section>
+  </section>
 
   <section class="cp-section gray">
     <div style="max-width:1320px;margin:0 auto 34px;overflow:hidden;border-radius:28px;position:relative;height:320px;">
@@ -324,96 +349,93 @@
     </div>
   </section>
 
-<section class="cp-section gray">
+  <section class="cp-section gray">
 
     <div class="cp-container">
 
-        <div class="cp-label">
-            Recursos rápidos
-        </div>
+      <div class="cp-label">
+        Recursos rápidos
+      </div>
 
-        <h2 class="cp-title">
-            Tudo o que você precisa em um só lugar
-        </h2>
+      <h2 class="cp-title">
+        Tudo o que você precisa em um só lugar
+      </h2>
 
-        <p class="cp-sub">
-            Consulte seu resultado ou faça parte da nossa rede de unidades credenciadas.
-        </p>
+      <p class="cp-sub">
+        Consulte seu resultado ou faça parte da nossa rede de unidades credenciadas.
+      </p>
 
-        <div class="cp-resource-grid">
+      <div class="cp-resource-grid">
 
-            <!-- CONSULTA -->
+        <!-- CONSULTA -->
 
-            <div id="consulta" class="cp-resource-card">
+        <div id="consulta" class="cp-resource-card">
 
-                <div class="cp-resource-icon">
-                    <i class="ti ti-flask"></i>
-                </div>
+          <div class="cp-resource-icon">
+            <i class="ti ti-flask"></i>
+          </div>
 
-                <h3>Consultar resultado</h3>
+          <h3>Consultar resultado</h3>
 
-                <p>
-                    Digite os dados abaixo para consultar o resultado do seu exame.
-                </p>
+          <p>
+            Digite os dados abaixo para consultar o resultado do seu exame.
+          </p>
 
-                <input
-                    type="text"
-                    placeholder="Código da amostra">
+          <input type="text" placeholder="Código da amostra">
 
-                <input
-                    type="text"
-                    placeholder="CPF do doador">
+          <input type="text" placeholder="CPF do doador">
 
-                <button class="cp-btn-primary">
-                    Consultar resultado
-                </button>
-
-            </div>
-
-            <!-- PARCEIRO -->
-
-            <div id="parceiro" class="cp-resource-card">
-
-                <div class="cp-resource-icon">
-                    <i class="ti ti-building-community"></i>
-                </div>
-
-                <h3>Seja um posto parceiro</h3>
-
-                <p>
-                    Faça parte da rede credenciada Contraprova e amplie seus serviços com o suporte de um laboratório referência nacional.
-                </p>
-
-                <ul class="cp-resource-list">
-
-                    <li>
-                        <i class="ti ti-check"></i>
-                        Atendimento em todo o Brasil
-                    </li>
-
-                    <li>
-                        <i class="ti ti-check"></i>
-                        Suporte comercial especializado
-                    </li>
-
-                    <li>
-                        <i class="ti ti-check"></i>
-                        Credenciamento rápido
-                    </li>
-
-                </ul>
-
-                <a href="#" class="cp-btn-primary">
-                    Quero ser parceiro
-                </a>
-
-            </div>
+          <button class="cp-btn-primary">
+            Consultar resultado
+          </button>
 
         </div>
+
+        <!-- PARCEIRO -->
+
+        <div id="parceiro" class="cp-resource-card">
+
+          <div class="cp-resource-icon">
+            <i class="ti ti-building-community"></i>
+          </div>
+
+          <h3>Seja um posto parceiro</h3>
+
+          <p>
+            Faça parte da rede credenciada Contraprova e amplie seus serviços com o suporte de um laboratório referência
+            nacional.
+          </p>
+
+          <ul class="cp-resource-list">
+
+            <li>
+              <i class="ti ti-check"></i>
+              Atendimento em todo o Brasil
+            </li>
+
+            <li>
+              <i class="ti ti-check"></i>
+              Suporte comercial especializado
+            </li>
+
+            <li>
+              <i class="ti ti-check"></i>
+              Credenciamento rápido
+            </li>
+
+          </ul>
+
+          <a href="#" class="cp-btn-primary">
+            Quero ser parceiro
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
 
-</section>
+  </section>
 
   <section id="noticias" class="cp-section gray">
     <div class="cp-container">
@@ -496,6 +518,7 @@
   <a href="#" class="cp-whatsapp">
     <img src="imagens/icones/wpp-icon.png" style="width:72px;height:72px;object-fit:contain;display:block;">
   </a>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

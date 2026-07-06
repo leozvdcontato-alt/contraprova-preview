@@ -62,8 +62,70 @@
     margin-bottom:24px;
 }
 
+.hero-price{
+    display:flex;
+    flex-direction:column;
+    margin:28px 0;
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid #dbe3ef;
 }
 
+.hero-price-card,
+.hero-payment-card{
+    padding:20px 22px;
+}
+
+.hero-price-card{
+    background:#f3f9ff;
+    border:none;
+    border-bottom:1px solid #dbe3ef;
+}
+
+.hero-payment-card{
+    background:#fff;
+    border:none;
+}
+
+.hero-price-value{
+    font-size:30px;
+    line-height:1;
+}
+
+.hero-payment-value{
+    font-size:18px;
+    line-height:1.25;
+}
+
+.cp-header-top{
+    display:none;
+}
+
+.cp-header{
+    padding:16px 18px;
+}
+
+.cp-header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.cp-logo img{
+    height:42px;
+}
+
+.cp-nav{
+    display:none;
+}
+
+.cp-menu-toggle{
+    display:block;
+}
+
+.hero-main-btn{
+    display:none;
+}
 
 /* =====================================
    MOBILE PEQUENO
@@ -79,5 +141,8 @@
 ===================================== */
 
 @media (max-width:480px){
+
+
+}
 
 }

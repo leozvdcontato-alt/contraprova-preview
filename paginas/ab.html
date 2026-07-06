@@ -16,6 +16,8 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
@@ -30,26 +32,45 @@
 
   <header class="cp-header">
     <div class="cp-header-inner">
-
-      <div class="cp-logo">
-        <img src="../imagens/logos/logo-cp.png" alt="Contraprova">
-      </div>
-
+      <div class="cp-logo"><img src="../imagens/logos/logo-cp.png"></div>
       <nav class="cp-nav">
-        <a href="#">Início</a>
-        <a href="#">Exames</a>
-        <a href="#">Empresas</a>
-        <a href="#">Concursos</a>
-        <a href="#">Notícias</a>
-        <a href="#">Contato</a>
+        <a href="#hero">Início</a>
+        <a href="/escolher-exame.html">Exames</a>
+        <a href="#consulta">Consultar resultado</a>
+        <a href="#parceiro">Seja parceiro</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#contato">Contato</a>
       </nav>
-
-      <a href="ab.html" class="cp-btn-primary">
-        Escolher meu exame
-      </a>
-
+      <button class="cp-menu-toggle">
+        <i class="ti ti-menu-2"></i>
+      </button>
     </div>
   </header>
+
+  <div class="cp-mobile-overlay"></div>
+
+  <aside class="cp-mobile-menu">
+
+    <button class="cp-mobile-close">
+      <i class="ti ti-x"></i>
+    </button>
+
+    <nav class="cp-mobile-nav">
+
+      <a href="#hero">Início</a>
+      <a href="../escolher-exame.html">Exames</a>
+      <a href="#consulta">Consultar resultado</a>
+      <a href="#parceiro">Seja parceiro</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#contato">Contato</a>
+
+    </nav>
+
+    <a href="../escolher-exame.html" class="cp-btn-primary">
+      Escolher meu exame
+    </a>
+
+  </aside>
 
   <section class="ab-hero">
 
@@ -243,7 +264,8 @@
   <a href="#" class="cp-whatsapp">
     <img src="../imagens/icones/wpp-icon.png" style="width:72px;height:72px;object-fit:contain;display:block;">
   </a>
-  <script src="../js/ab.js"></script>
+  <script src="../js/script.js"></script>
+<script src="../js/ab.js"></script>
 
 </body>
 

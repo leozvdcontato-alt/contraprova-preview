@@ -15,6 +15,8 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
@@ -29,103 +31,45 @@
 
   <header class="cp-header">
     <div class="cp-header-inner">
-      <a href="../index.html" class="cp-logo">
-    <img src="../imagens/logos/logo-cp.png" alt="Contraprova">
-</a>
+      <div class="cp-logo"><img src="../imagens/logos/logo-cp.png"></div>
       <nav class="cp-nav">
-        <a href="#">Início</a>
-        <a href="#">Exames</a>
-        <a href="#">Empresas</a>
-        <a href="#">Concursos</a>
-        <a href="#">Notícias</a>
-        <a href="#">Contato</a>
+        <a href="#hero">Início</a>
+        <a href="/escolher-exame.html">Exames</a>
+        <a href="#consulta">Consultar resultado</a>
+        <a href="#parceiro">Seja parceiro</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#contato">Contato</a>
       </nav>
-      <a href="ab.html" class="cp-btn-primary">
-        Escolher meu exame
-      </a>
+      <button class="cp-menu-toggle">
+        <i class="ti ti-menu-2"></i>
+      </button>
     </div>
   </header>
 
-  <section class="cp-section white">
+  <div class="cp-mobile-overlay"></div>
 
-    <div class="cp-container" style="max-width:1200px;">
+  <aside class="cp-mobile-menu">
 
-        <div class="cp-label">
-            PRIMEIRA HABILITAÇÃO • CATEGORIAS A E B
-        </div>
+    <button class="cp-mobile-close">
+      <i class="ti ti-x"></i>
+    </button>
 
-        <h1 class="cp-title">
-            Complete seus dados
-        </h1>
+    <nav class="cp-mobile-nav">
 
-        <p class="cp-sub">
-            Preencha suas informações para prosseguir com a compra do exame toxicológico.
-        </p>
+      <a href="#hero">Início</a>
+      <a href="../escolher-exame.html">Exames</a>
+      <a href="#consulta">Consultar resultado</a>
+      <a href="#parceiro">Seja parceiro</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#contato">Contato</a>
 
-<div class="checkout-layout">
+    </nav>
 
-    <div class="checkout-form">
+    <a href="../escolher-exame.html" class="cp-btn-primary">
+      Escolher meu exame
+    </a>
 
-<h2>Dados pessoais</h2>
-
-<div class="form-grid">
-
-    <div class="form-group">
-        <label>Nome completo</label>
-        <input type="text" placeholder="Digite seu nome">
-    </div>
-
-    <div class="form-group">
-        <label>CPF</label>
-        <input type="text" placeholder="000.000.000-00">
-    </div>
-
-    <div class="form-group">
-        <label>Celular</label>
-        <input type="text" placeholder="(21) 99999-9999">
-    </div>
-
-    <div class="form-group">
-        <label>E-mail</label>
-        <input type="email" placeholder="voce@email.com">
-    </div>
-
-</div>
-        
-    </div>
-
-    <aside class="checkout-summary">
-
-<h3>Resumo da compra</h3>
-
-<div class="summary-item">
-    <span>Exame</span>
-    <strong>Primeira habilitação A e B</strong>
-</div>
-
-<div class="summary-item">
-    <span>Unidade</span>
-
-    <strong id="summary-posto">SEMTRAB</strong>
-
-    <p id="summary-endereco"></p>
-
-    <p id="summary-telefone"></p>
-</div>
-
-<div class="summary-item">
-    <span>Valor</span>
-    <strong id="summary-preco">R$ 109,00</strong>
-</div>
-
-<a
-    id="btn-continuar"
-    class="cp-btn-primary"
-    href="#">
-    Continuar
-</a>
-
-    </aside>
+  </aside>
 
 </div>
 
@@ -171,6 +115,7 @@
   </a>
   <script src="../js/dados.js"></script>
 
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

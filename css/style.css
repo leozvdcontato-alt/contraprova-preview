@@ -20,6 +20,28 @@ a {
    RESET
 ===================================== */
 
+/* ===================================================
+   ÍNDICE
+
+   01. RESET
+   02. HEADER
+   03. HERO HOME
+   04. COMPONENTES
+   05. SEÇÕES
+   06. FOOTER
+
+   PÁGINAS
+
+   07. ESCOLHER EXAME
+   08. AB
+   09. BUSCA DE UNIDADES
+   10. CHECKOUT
+   11. CONFIRMAÇÃO
+
+   UTILITÁRIOS
+
+=================================================== */
+
 .cp-header-top {
     background: #0f172a;
     color: #fff;
@@ -96,171 +118,232 @@ a {
     box-shadow: 0 14px 30px rgba(0, 74, 139, .28);
 }
 
-/* =====================================
-   HERO
-===================================== */
+/* ===================================================
+   03. HERO HOME
+=================================================== */
 
-.cp-hero {
-    background: #fff;
-    padding: 36px 40px 12px;
-    border-bottom: none;
+.cp-hero-inner{
+    max-width:1320px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:48px;
+    align-items:center;
 }
 
-.cp-hero-inner {
-    max-width: 1320px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    gap: 36px;
-    align-items: center
+.cp-hero-content{
+    display:flex;
+    flex-direction:column;
 }
 
-.cp-badge {
-    display: inline-flex;
-    background: rgba(7, 169, 220, .12);
-    color: #004A8B;
-    border: 1px solid rgba(7, 169, 220, .18);
-    border-radius: 30px;
-    padding: 8px 16px;
-    font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 18px
+.cp-badge{
+    display:inline-flex;
+    align-self:flex-start;
+    padding:8px 16px;
+    margin-bottom:18px;
+    background:rgba(7,169,220,.12);
+    border:1px solid rgba(7,169,220,.18);
+    border-radius:999px;
+    color:#004A8B;
+    font-size:12px;
+    font-weight:700;
 }
 
-.cp-hero h1 {
-    font-size: 52px;
-    line-height: 1.05;
-    font-weight: 900;
-    color: #0f172a;
-    margin-bottom: 20px;
-    max-width: 700px
+.cp-hero-content h1{
+    max-width:700px;
+    margin-bottom:20px;
+    font-size:52px;
+    line-height:1.05;
+    font-weight:900;
+    color:#0f172a;
 }
 
-.cp-hero p {
-    font-size: 17px;
-    line-height: 1.8;
-    color: #475569;
-    max-width: 620px;
-    margin-bottom: 28px
+.cp-hero-content > p{
+    max-width:620px;
+    margin-bottom:28px;
+    font-size:17px;
+    line-height:1.8;
+    color:#475569;
 }
 
-.cp-hero-buttons {
-    width: 100%;
-    margin: 18px 0;
+.hero-price{
+    display:flex;
+    align-items:stretch;
+    margin-bottom:24px;
 }
 
-.cp-hero-buttons .cp-btn-primary {
-    width: 85%;
-    margin: 0;
-    display: block;
-
+.hero-price-card{
+    background:#f0f9ff;
+    border:1px solid #dbe3ef;
+    border-right:none;
+    border-radius:16px 0 0 16px;
+    padding:16px 20px;
+    min-width:180px;
 }
 
-.cp-btn-secondary {
-    background: #25D366;
-    border: none;
-    color: #fff;
-    padding: 16px 28px;
-    border-radius: 14px;
-    font-weight: 800;
-    cursor: pointer;
-    transition: .25s ease;
-    box-shadow: 0 14px 32px rgba(37, 211, 102, .28)
+.hero-price-label{
+    display:block;
+    font-size:12px;
+    font-weight:600;
+    color:#64748b;
+    margin-bottom:6px;
 }
 
-.cp-btn-secondary:hover {
-    background: #20bf5a;
-    transform: translateY(-2px)
+.hero-price-value{
+    display:block;
+    font-size:30px;
+    line-height:1;
+    font-weight:900;
+    color:#004A8B;
 }
 
-.cp-side-card {
-    background: #fff;
-    border: 1px solid #dbe3ef;
-    border-radius: 24px;
-    padding: 22px;
-    box-shadow: 0 14px 40px rgba(15, 23, 42, .08);
-    overflow: hidden
+.hero-price-installments{
+    display:block;
+    margin-top:8px;
+    font-size:13px;
+    font-weight:700;
+    color:#0074D9;
 }
 
-.cp-side-item {
-    background: linear-gradient(135deg, #0058a8 0%, #004A8B 100%);
-    border: 1px solid rgba(7, 169, 220, .18);
-    padding: 20px;
-    border-radius: 18px;
-    font-size: 16px;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 14px;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, .18);
-    transition: .25s ease;
-    cursor: pointer;
+.hero-payment-card{
+    flex:1;
+    max-width:380px;
+    background:#f8fafc;
+    border:1px solid #dbe3ef;
+    border-left:1px solid #eef2f7;
+    border-radius:0 16px 16px 0;
+    padding:16px 20px;
 }
 
-.cp-side-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -120%;
-    width: 120%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .12), transparent);
-    transition: .5s ease
+.hero-payment-label{
+    display:block;
+    font-size:12px;
+    font-weight:600;
+    color:#64748b;
+    margin-bottom:6px;
 }
 
-.cp-side-item:hover::before {
-    left: 120%
+.hero-payment-value{
+    display:block;
+    font-size:24px;
+    line-height:1.25;
+    font-weight:800;
+    color:#0f172a;
 }
 
-.cp-side-item:last-child {
-    margin-bottom: 0
+.cp-hero-buttons{
+    width:100%;
+    margin:22px 0;
 }
 
-.cp-side-item:hover {
-    background: linear-gradient(135deg, #07A9DC 0%, #4292D9 100%);
-    transform: translateY(-3px) scale(1.015);
-    border-color: #07A9DC;
-    box-shadow: 0 18px 36px rgba(7, 169, 220, .30);
-    color: #fff
+.hero-main-btn{
+    display:block;
+    width:100%;
+    max-width:566px;
+    margin:0;
+    text-align:center;
 }
 
-.cp-tag {
-    background: #07A9DC;
-    color: #fff;
-    font-size: 10px;
-    padding: 4px 9px;
-    border-radius: 20px;
-    font-weight: 800;
-    letter-spacing: .02em
+.cp-side-card{
+    padding:28px;
+    overflow:hidden;
+    background:#0f172a;
+    border:none;
+    border-radius:24px;
+    box-shadow:0 18px 45px rgba(15,23,42,.18);
 }
 
-.cp-select {
-    width: 100%;
-    height: 56px;
-    border: 1px solid #dbe3ef;
-    border-radius: 14px;
-    padding: 0 18px;
-    margin-bottom: 16px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    background: #fff;
-    color: #334155;
-    transition: .25s ease;
+.hero-card-header{
+    margin-bottom:22px;
 }
 
-.cp-select:focus {
-    outline: none;
-    border-color: #004A8B;
-    box-shadow: 0 0 0 4px rgba(0, 74, 139, .08);
+.hero-card-header h2{
+    margin-bottom:14px;
+    font-size:34px;
+    line-height:1.05;
+    font-weight:900;
+    color:#fff;
 }
 
-/* =====================================
-   CONTATO RÁPIDO
-===================================== */
+.hero-card-header p{
+    color:#cbd5e1;
+    font-size:15px;
+    line-height:1.8;
+}
+
+.cp-side-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    margin-bottom:14px;
+    position:relative;
+    overflow:hidden;
+    border:1px solid rgba(7,169,220,.18);
+    border-radius:18px;
+    background:linear-gradient(135deg,#0058a8 0%,#004A8B 100%);
+    color:#fff;
+    text-decoration:none;
+    box-shadow:0 10px 24px rgba(0,0,0,.18);
+    transition:.25s ease;
+    cursor:pointer;
+}
+
+.cp-side-item:last-child{
+    margin-bottom:0;
+}
+
+.cp-side-item::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    left:-120%;
+    width:120%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);
+    transition:.5s ease;
+}
+
+.cp-side-item:hover::before{
+    left:120%;
+}
+
+.cp-side-item:hover{
+    transform:translateY(-3px);
+    background:linear-gradient(135deg,#07A9DC 0%,#4292D9 100%);
+    border-color:#07A9DC;
+    box-shadow:0 18px 36px rgba(7,169,220,.30);
+}
+
+.hero-card-title{
+    margin-bottom:4px;
+    font-size:17px;
+    font-weight:800;
+    color:#fff;
+}
+
+.hero-card-subtitle{
+    font-size:13px;
+    font-weight:500;
+    color:#bfdbfe;
+}
+
+.hero-arrow{
+    font-size:22px;
+}
+
+.cp-tag{
+    padding:4px 9px;
+    border-radius:999px;
+    background:#07A9DC;
+    color:#fff;
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.02em;
+}
+
+/* ===================================================
+   04. COMPONENTES
+=================================================== */
 
 .cp-contact-strip {
     background: #2563eb;
@@ -278,9 +361,9 @@ a {
     font-weight: 700
 }
 
-/* =====================================
-   SEÇÕES
-===================================== */
+/* ===================================================
+   05. SEÇÕES
+=================================================== */
 
 .cp-section {
     padding: 72px 40px
@@ -490,9 +573,9 @@ a {
     line-height: 1.7
 }
 
-/* =====================================
-   FOOTER
-===================================== */
+/* ===================================================
+   06. FOOTER
+=================================================== */
 
 .cp-footer {
     background: #fff;
@@ -521,48 +604,7 @@ a {
     line-height: 1.9
 }
 
-@media(max-width:1000px) {
-    .cp-grid {
-        grid-template-columns: repeat(2, 1fr)
-    }
 
-    .cp-process,
-    .cp-hero-inner,
-    .cp-footer-inner,
-    .cp-contact-inner {
-        grid-template-columns: 1fr
-    }
-
-    .cp-nav {
-        display: none
-    }
-
-    .cp-hero h1 {
-        font-size: 34px
-    }
-}
-
-@media(max-width:640px) {
-    .cp-grid {
-        grid-template-columns: 1fr
-    }
-
-    .cp-header {
-        padding: 14px 18px
-    }
-
-    .cp-hero h1 {
-        font-size: 30px
-    }
-
-    .cp-title {
-        font-size: 28px
-    }
-
-    .cp-cta h2 {
-        font-size: 30px
-    }
-}
 
 .cp-footer-logos {
     display: flex;
@@ -626,284 +668,7 @@ a {
     object-fit: contain
 }
 
-@media(max-width:1100px) {
-    .cp-hero-inner {
-        grid-template-columns: 1fr;
-        gap: 34px
-    }
 
-    .cp-grid {
-        grid-template-columns: 1fr 1fr
-    }
-
-    .cp-footer-inner {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px
-    }
-}
-
-@media(max-width:768px) {
-    body {
-        overflow-x: hidden
-    }
-
-    .cp-header-top {
-        padding: 14px 18px
-    }
-
-    .cp-header-top-inner {
-        flex-direction: column;
-        gap: 10px;
-        font-size: 13px
-    }
-
-    .cp-header {
-        padding: 16px 18px
-    }
-
-    .cp-header-inner {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 14px
-    }
-
-    .cp-logo img {
-        height: 54px
-    }
-
-    .cp-nav {
-        display: none
-    }
-
-    .cp-header .cp-btn-primary {
-        padding: 14px 18px;
-        font-size: 14px;
-        white-space: nowrap;
-        border-radius: 14px
-    }
-
-    .cp-hero {
-        padding: 28px 18px 42px
-    }
-
-    .cp-hero-inner {
-        display: flex;
-        flex-direction: column;
-        gap: 22px
-    }
-
-    .cp-badge {
-        font-size: 11px;
-        line-height: 1.5;
-        padding: 10px 14px;
-        border-radius: 18px
-    }
-
-    .cp-hero h1 {
-        font-size: 52px;
-        line-height: .95;
-        letter-spacing: -.04em;
-        margin-bottom: 18px
-    }
-
-    .cp-hero p {
-        font-size: 18px;
-        line-height: 1.75;
-        margin-bottom: 24px
-    }
-
-    .cp-hero>div,
-    .cp-hero-inner>div {
-        width: 100%
-    }
-
-    .cp-hero-inner>div:first-child>div[style*='display:flex;gap:12px'] {
-        flex-direction: column;
-        gap: 14px !important
-    }
-
-    .cp-hero-inner>div:first-child>div[style*='display:flex;gap:12px']>div {
-        width: 100%;
-        min-width: 100% !important
-    }
-
-    .cp-hero-inner>div:first-child>div[style*='display:flex;gap:18px'] {
-        display: grid !important;
-        grid-template-columns: 1fr;
-        gap: 10px !important
-    }
-
-    .cp-hero-buttons {
-        display: flex;
-        flex-direction: column;
-        width: 100%
-    }
-
-    .cp-btn-primary,
-    .cp-btn-secondary {
-        width: 100%;
-        justify-content: center;
-        min-height: 56px;
-        font-size: 15px
-    }
-
-    .cp-side-card {
-        padding: 22px;
-        border-radius: 24px
-    }
-
-    .cp-side-card>div:first-child div:first-child {
-        font-size: 30px !important;
-        line-height: 1.05 !important
-    }
-
-    .cp-side-item {
-        padding: 18px;
-        border-radius: 18px
-    }
-
-    .cp-side-item div div:first-child {
-        font-size: 16px !important;
-        line-height: 1.2
-    }
-
-    .cp-side-item div div:last-child {
-        font-size: 12px !important
-    }
-
-    .cp-section.gray>div:first-child {
-        height: 520px !important
-    }
-
-    .cp-section.gray>div:first-child div[style*='padding:50px'] {
-        padding: 28px !important;
-        align-items: flex-start !important;
-        padding-top: 34px !important
-    }
-
-    .cp-section.gray>div:first-child div[style*='font-size:42px'] {
-        font-size: 68px !important;
-        line-height: .9 !important;
-        letter-spacing: -.05em;
-        max-width: 100% !important
-    }
-
-    .cp-section.gray>div:first-child div[style*='font-size:16px'] {
-        font-size: 18px !important;
-        line-height: 1.6 !important;
-        margin-top: 18px
-    }
-
-    .cp-section {
-        padding: 58px 18px
-    }
-
-    .cp-title {
-        font-size: 48px;
-        line-height: .98;
-        letter-spacing: -.04em
-    }
-
-    .cp-sub {
-        font-size: 18px;
-        line-height: 1.8
-    }
-
-    .cp-grid {
-        grid-template-columns: 1fr;
-        gap: 18px
-    }
-
-    .cp-card {
-        padding: 24px
-    }
-
-    .cp-card h3 {
-        font-size: 20px
-    }
-
-    .cp-card p {
-        font-size: 15px
-    }
-
-    .cp-process {
-        grid-template-columns: 1fr;
-        gap: 30px
-    }
-
-    .cp-image-box {
-        min-height: 380px;
-        padding: 28px
-    }
-
-    .cp-image-box div[style*='font-size:30px'] {
-        font-size: 36px !important
-    }
-
-    .cp-faq {
-        padding: 22px
-    }
-
-    .cp-faq h4 {
-        font-size: 17px
-    }
-
-    .cp-cta {
-        padding: 64px 18px
-    }
-
-    .cp-cta h2 {
-        font-size: 46px;
-        line-height: .98
-    }
-
-    .cp-cta p {
-        font-size: 18px
-    }
-
-    .cp-footer {
-        padding: 48px 18px 120px
-    }
-
-    .cp-footer-inner {
-        grid-template-columns: 1fr;
-        gap: 34px
-    }
-
-    .cp-footer-logos {
-        gap: 18px
-    }
-
-    .cp-footer-logos img:nth-child(1) {
-        height: 42px
-    }
-
-    .cp-footer-logos img:nth-child(2) {
-        height: 46px
-    }
-
-    .cp-footer-logos img:nth-child(3) {
-        height: 44px
-    }
-
-    .cp-footer-logos img:nth-child(4) {
-        height: 34px
-    }
-
-    .cp-whatsapp {
-        width: 72px;
-        height: 72px;
-        bottom: 88px;
-        right: 18px
-    }
-
-    .cp-whatsapp img {
-        width: 72px;
-        height: 72px
-    }
-}
 
 /* =====================================
    ESCOLHER EXAME
@@ -950,23 +715,6 @@ a {
     transform: translateY(-4px);
     border-color: #004A8B;
     box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
-}
-
-@media(max-width:768px) {
-
-    .exam-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .exam-card {
-        padding: 24px;
-    }
-
-    .exam-card span {
-        font-size: 20px;
-    }
-
 }
 
 /* =====================================
@@ -1140,13 +888,8 @@ a {
 }
 
 /* =====================================
-   HERO AB
+    08. AB
 ===================================== */
-
-.cp-hero {
-    background: #fff;
-    padding: 36px 40px;
-}
 
 .cp-hero .cp-container {
     max-width: 1320px;
@@ -1871,16 +1614,6 @@ a {
 
     color:#07A9DC;
     font-size:18px;
-
-}
-
-@media(max-width:900px){
-
-    .cp-resource-grid{
-
-        grid-template-columns:1fr;
-
-    }
 
 }
 

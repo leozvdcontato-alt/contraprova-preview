@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Contraprova</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,11 @@
 
   <header class="cp-header">
     <div class="cp-header-inner">
-      <div class="cp-logo"><img src="../imagens/logos/logo-cp.png"></div>
+
+      <div class="cp-logo">
+        <img src="../imagens/logos/logo-cp.png" alt="Contraprova">
+      </div>
+
       <nav class="cp-nav">
         <a href="#">Início</a>
         <a href="#">Exames</a>
@@ -38,33 +43,37 @@
         <a href="#">Notícias</a>
         <a href="#">Contato</a>
       </nav>
+
       <a href="ab.html" class="cp-btn-primary">
         Escolher meu exame
       </a>
+
     </div>
   </header>
 
-  <section class="cp-section white">
+  <section class="ab-hero">
 
-    <div class="cp-container">
+    <div class="ab-container">
 
-      <div class="cp-label">
+      <div class="ab-label">
         PRIMEIRA HABILITAÇÃO • CATEGORIAS A E B
       </div>
 
-      <h1 class="cp-title">
+      <h1 class="ab-title">
         Encontre uma unidade próxima de você
       </h1>
 
-      <p class="cp-sub">
+      <p class="ab-sub">
         Selecione seu estado, cidade e bairro para visualizar os postos disponíveis e escolher onde realizar seu exame.
       </p>
 
-      <p class="cp-helper">
+      <p class="ab-helper">
         Exame destinado à primeira habilitação e mudança de categoria da CNH A e B.
       </p>
-      <div class="cp-search-box">
-        <div class="cp-search-bar">
+
+      <div class="ab-search-box">
+
+        <div class="ab-search-bar">
 
           <select id="estado" class="cp-select">
             <option value="rj">Rio de Janeiro</option>
@@ -81,11 +90,15 @@
 
         </div>
 
+      </div>
+
+    </div>
+
   </section>
 
-  <section class="cp-section gray">
+  <section class="ab-results">
 
-    <div class="cp-container">
+    <div class="ab-container">
 
       <div class="units-layout">
 
@@ -103,7 +116,9 @@
 
             <div>
 
-              <h3 id="total-unidades">8 unidades encontradas</h3>
+              <h3 id="total-unidades">
+                8 unidades encontradas
+              </h3>
 
               <p id="localizacao-atual">
                 Centro • Niterói/RJ
@@ -112,89 +127,86 @@
             </div>
 
             <select class="units-sort">
-
               <option>Menor preço</option>
               <option>Maior preço</option>
               <option>Mais próximo</option>
-
             </select>
 
           </div>
 
-          <div id="lista-unidades">
-
-          </div>
+          <div id="lista-unidades"></div>
 
         </div>
 
       </div>
 
     </div>
+
   </section>
 
-<section class="cp-section white">
+  <section class="cp-section white">
 
     <div class="cp-container">
 
-        <div class="cp-label">
-            INFORMAÇÕES IMPORTANTES
-        </div>
+      <div class="cp-label">
+        INFORMAÇÕES IMPORTANTES
+      </div>
 
-        <h2 class="cp-title">
-            Antes de realizar seu exame
-        </h2>
+      <h2 class="cp-title">
+        Antes de realizar seu exame
+      </h2>
 
-        <div class="info-grid">
+      <div class="info-grid">
 
-            <div class="info-card">
-                <i class="ti ti-id"></i>
+        <div class="info-card">
+          <i class="ti ti-id"></i>
 
-                <h3>Documento</h3>
+          <h3>Documento</h3>
 
-                <p>
-                    Leve um documento oficial com foto em bom estado.
-                </p>
-
-            </div>
-
-            <div class="info-card">
-                <i class="ti ti-clock-hour-4"></i>
-
-                <h3>Tempo de coleta</h3>
-
-                <p>
-                    O procedimento costuma levar apenas alguns minutos.
-                </p>
-
-            </div>
-
-            <div class="info-card">
-                <i class="ti ti-map-pin"></i>
-
-                <h3>Escolha a unidade</h3>
-
-                <p>
-                    Utilize os filtros acima para encontrar o posto mais conveniente.
-                </p>
-
-            </div>
-
-            <div class="info-card">
-                <i class="ti ti-file-check"></i>
-
-                <h3>Resultado</h3>
-
-                <p>
-                    O processamento segue o fluxo oficial do exame toxicológico.
-                </p>
-
-            </div>
+          <p>
+            Leve um documento oficial com foto em bom estado.
+          </p>
 
         </div>
+
+        <div class="info-card">
+          <i class="ti ti-clock-hour-4"></i>
+
+          <h3>Tempo de coleta</h3>
+
+          <p>
+            O procedimento costuma levar apenas alguns minutos.
+          </p>
+
+        </div>
+
+        <div class="info-card">
+          <i class="ti ti-map-pin"></i>
+
+          <h3>Escolha a unidade</h3>
+
+          <p>
+            Utilize os filtros acima para encontrar o posto mais conveniente.
+          </p>
+
+        </div>
+
+        <div class="info-card">
+          <i class="ti ti-file-check"></i>
+
+          <h3>Resultado</h3>
+
+          <p>
+            O processamento segue o fluxo oficial do exame toxicológico.
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
 
-</section>
+  </section>
   <footer class="cp-footer">
     <div class="cp-footer-inner">
       <div>

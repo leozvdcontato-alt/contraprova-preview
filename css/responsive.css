@@ -36,7 +36,7 @@
 @media (max-width:768px){
 
     .cp-hero{
-    padding:40px 18px;
+    padding:28px 18px;
 }
 
 .cp-hero-inner{
@@ -59,13 +59,13 @@
 .cp-hero-content > p{
     font-size:16px;
     line-height:1.7;
-    margin-bottom:24px;
+    margin-bottom:12px;
 }
 
 .hero-price{
     display:flex;
     flex-direction:column;
-    margin:28px 0;
+    margin:16px 0 20px;
     border-radius:18px;
     overflow:hidden;
     border:1px solid #dbe3ef;
@@ -73,30 +73,16 @@
 
 .hero-price-card,
 .hero-payment-card{
-    padding:20px 22px;
-}
-
-.hero-price-card{
-    background:#f3f9ff;
-    border:none;
-    border-bottom:1px solid #dbe3ef;
-}
-
-.hero-payment-card{
-    background:#fff;
-    border:none;
+    padding:18px;
 }
 
 .hero-price-value{
-    font-size:30px;
-    line-height:1;
+    font-size:26px;
 }
 
 .hero-payment-value{
-    font-size:18px;
-    line-height:1.25;
+    font-size:16px;
 }
-
 .cp-header-top{
     display:none;
 }
@@ -124,7 +110,49 @@
 }
 
 .hero-main-btn{
-    display:none;
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+
+.hero-benefits{
+    flex-direction:column;
+    gap:12px;
+    margin-top:20px;
+}
+
+.hero-benefit{
+    font-size:15px;
+}
+
+.hero-dot{
+    width:8px;
+    height:8px;
+}
+
+.cp-hero-buttons{
+    margin:0 0 12px;
+}
+
+.hero-benefits{
+    margin-top:8px;
+}
+
+.hero-main-btn{
+    padding:14px 22px;
+    min-height:54px;
+}
+
+.cp-whatsapp{
+    width:64px;
+    height:64px;
+    right:16px;
+    bottom:16px;
+}
+
+.cp-whatsapp img{
+    width:64px;
+    height:64px;
 }
 
 /* =====================================

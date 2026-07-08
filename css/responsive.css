@@ -62,6 +62,10 @@
     margin-bottom:12px;
 }
 
+.cp-side-card{
+    padding:28px 22px;
+}
+
 .hero-price{
     display:flex;
     flex-direction:column;

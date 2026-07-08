@@ -153,30 +153,35 @@ img {
    03. HERO HOME
 =================================================== */
 
+.cp-hero {
+    padding: 42px 40px 96px;
+}
+
 .cp-hero-inner {
     max-width: 1320px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.1fr .9fr;
-    gap: 48px;
+    gap: 72px;
     align-items: center;
 }
 
 .cp-hero-content {
     display: flex;
     flex-direction: column;
+    gap: 0;
 }
 
 .cp-badge {
     display: inline-flex;
     align-self: flex-start;
-    padding: 8px 16px;
-    margin-bottom: 18px;
+    padding: 10px 18px;
+    margin-bottom: 12px;
     background: rgba(7, 169, 220, .12);
     border: 1px solid rgba(7, 169, 220, .18);
     border-radius: 999px;
     color: #004A8B;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
 }
 
@@ -189,9 +194,10 @@ img {
     color: #0f172a;
 }
 
-.cp-hero-content>p {
+.cp-hero-content > p {
     max-width: 620px;
-    margin-bottom: 28px;
+    margin-top: 28px;
+    margin-bottom: 36px;
     font-size: 17px;
     line-height: 1.8;
     color: #475569;
@@ -200,7 +206,7 @@ img {
 .hero-price {
     display: flex;
     align-items: stretch;
-    margin-bottom: 24px;
+    margin-bottom: 36px;
 }
 
 .hero-price-card {
@@ -264,7 +270,7 @@ img {
 
 .cp-hero-buttons {
     width: 100%;
-    margin: 22px 0;
+    margin: 32px 0;
 }
 
 .hero-main-btn {
@@ -300,7 +306,7 @@ img {
 }
 
 .cp-side-card {
-    padding: 28px;
+    padding: 44px;
     overflow: hidden;
     background: #0f172a;
     border: none;
@@ -314,8 +320,8 @@ img {
 
 .hero-card-header h2 {
     margin-bottom: 8px;
-    font-size: 34px;
-    line-height: 1;
+    font-size: 28px;
+    line-height: 1.05;
     font-weight: 900;
     color: #fff;
 }
@@ -332,6 +338,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 18px;
+    min-height:auto;
     margin-bottom: 14px;
     position: relative;
     overflow: hidden;
@@ -373,7 +380,7 @@ img {
 .hero-card-title {
     margin-bottom: 8px;
     font-size: 18px;
-    line-height: 1.35;
+    line-height: 1.25;
     font-weight: 800;
     color: #fff;
 }
@@ -385,10 +392,13 @@ img {
     color: #bfdbfe;
 }
 
-.hero-arrow{
-    font-size:28px;
-    flex-shrink:0;
-    margin-left:24px;
+.hero-arrow {
+    position:absolute;
+    right:18px;
+    bottom:18px;
+    font-size: 28px;
+    flex-shrink: 0;
+    margin-left: 24px;
 }
 
 .cp-tag {
@@ -399,19 +409,17 @@ img {
     font-size: 10px;
     font-weight: 800;
     letter-spacing: .02em;
-    margin-top:12px;
+
+    align-self: flex-start;
+    margin-top: 6px;
 }
 
-.hero-card-content{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
+.hero-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.cp-tag{
-    align-self:flex-start;
-    margin-top:6px;
-}
 /* ===================================================
    04. COMPONENTES
 =================================================== */
@@ -931,11 +939,14 @@ img {
    BUSCA DE UNIDADES
 ===================================== */
 
-.cp-search-bar {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    margin-top: 36px;
+.ab-search-bar{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.units-layout{
+    margin-top:40px;
 }
 
 .cp-select {
@@ -961,6 +972,43 @@ img {
 /* =====================================
     08. AB
 ===================================== */
+
+.ab-container{
+    max-width:1320px;
+    margin:0 auto;
+    padding:0 40px;
+}
+
+.ab-hero{
+    background:#eef4fa;
+    padding: 56px 0 40px;
+}
+
+.ab-hero-header{
+    max-width:760px;
+    margin:0 auto 28px;
+    text-align:center;
+}
+
+.ab-title{
+    font-size:56px;
+    line-height:1.05;
+    font-weight:900;
+    color:#0f172a;
+    margin:22px 0 18px;
+}
+
+.ab-subtitle{
+    font-size:20px;
+    line-height:1.7;
+    color:#475569;
+}
+
+.ab-search-bar{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
 
 .cp-hero .cp-container {
     max-width: 1320px;
@@ -1056,18 +1104,17 @@ img {
    UNIDADES
 ========================== */
 
-.units-layout {
-    display: grid;
-    grid-template-columns: 34% 66%;
-    gap: 32px;
-    align-items: start;
+.units-layout{
+    display:grid;
+    grid-template-columns: 560px 1fr;
+    gap:40px;
+    align-items:start;
 }
 
-.units-map {
-    position: sticky;
-    top: 140px;
-
-    align-self: flex-start;
+.units-map{
+    position:sticky;
+    top:120px;
+    align-self:start;
 }
 
 .map-placeholder {
@@ -1081,10 +1128,10 @@ img {
     font-weight: 700;
 }
 
-.units-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.units-list{
+    height:calc(100vh - 210px);
+    overflow-y:auto;
+    padding-right:8px;
 }
 
 .unit-card {
@@ -1152,13 +1199,12 @@ img {
    HEADER DA LISTA
 ========================== */
 
-.units-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
-    padding-bottom: 18px;
-    border-bottom: 1px solid #e2e8f0;
+.units-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:24px;
+    margin-bottom:20px;
 }
 
 .units-header h3 {
@@ -1190,12 +1236,12 @@ img {
     border-color: #004A8B;
 }
 
-.units-map iframe {
-    width: 100%;
-    height: 650px;
-
-    border: 0;
-    border-radius: 20px;
+.units-map-frame{
+    width:100%;
+    height:calc(100vh - 180px);
+    min-height:650px;
+    border:none;
+    border-radius:24px;
 }
 
 .unit-phone {

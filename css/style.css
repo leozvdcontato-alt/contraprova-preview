@@ -1897,3 +1897,64 @@ input:focus-visible{
         transition-duration:.01ms!important;
     }
 }
+
+
+/* ===================================================
+   REFINAMENTO VISUAL — acabamento editorial
+   Mantém a estrutura existente e reduz aparência de template
+=================================================== */
+:root{
+  --cp-ink:#102235;
+  --cp-muted:#617083;
+  --cp-line:#dfe6ed;
+  --cp-soft:#f5f8fa;
+  --cp-blue:#004A8B;
+  --cp-cyan:#07A9DC;
+}
+body{background:#f4f7f9;color:var(--cp-ink)}
+.cp-header-top{background:#102235;padding-top:8px;padding-bottom:8px}
+.cp-header{border-bottom:1px solid rgba(16,34,53,.08);box-shadow:0 8px 28px rgba(16,34,53,.035)}
+.cp-nav a{font-weight:600;letter-spacing:-.01em;transition:color .18s ease}
+.cp-btn-primary{border-radius:10px;box-shadow:none;letter-spacing:-.01em}
+.cp-btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,74,139,.16)}
+.cp-label{font-size:12px;letter-spacing:.13em;margin-bottom:12px}
+.cp-title{letter-spacing:-.035em;line-height:1.12}
+.cp-sub{color:var(--cp-muted);line-height:1.75}
+.cp-section{padding-top:84px;padding-bottom:84px}
+.cp-section.gray{background:#f3f6f8}
+.cp-card,.cp-resource-card,.info-card,.cp-faq,.cp-news-item{
+  border-color:var(--cp-line);
+  border-radius:12px;
+  box-shadow:none;
+}
+.cp-card:hover,.cp-resource-card:hover,.cp-news-item:hover{
+  transform:translateY(-2px);
+  border-color:rgba(0,74,139,.28);
+  box-shadow:0 14px 32px rgba(16,34,53,.055);
+}
+.cp-card-icon,.cp-resource-icon{
+  background:transparent!important;
+  border:1px solid #d7e5ef;
+  border-radius:50%!important;
+  color:var(--cp-blue);
+}
+.cp-resource-card{position:relative;overflow:hidden}
+.cp-resource-card:before{
+  content:"";position:absolute;left:0;top:0;width:3px;height:42px;background:var(--cp-cyan);
+}
+.cp-cta{background:#102b43;padding-top:76px;padding-bottom:76px}
+.cp-cta h2{letter-spacing:-.035em}
+.cp-footer{border-top:1px solid var(--cp-line);padding-top:52px;padding-bottom:52px}
+.cp-footer h4{letter-spacing:.02em;color:#26384a}
+.cp-footer a{transition:color .18s ease}
+.cp-footer a:hover{color:var(--cp-blue)}
+.exam-card,.plan-card{border-color:var(--cp-line);box-shadow:none}
+.exam-card{border-radius:12px}
+.plan-card{border-radius:16px}
+.plan-card:hover,.exam-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(16,34,53,.07)}
+.cp-search-box{background:#f7f9fb;border-color:var(--cp-line);border-radius:14px}
+.cp-select{border-radius:10px}
+.unit-card{border-color:var(--cp-line)!important;box-shadow:none!important}
+.unit-card:hover{border-color:rgba(0,74,139,.3)!important;box-shadow:0 14px 32px rgba(16,34,53,.06)!important}
+.cp-info{background:#f3f8fc;border-radius:6px}
+.cp-btn-whatsapp{border-radius:10px!important;box-shadow:none}

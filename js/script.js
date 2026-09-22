@@ -6,6 +6,8 @@ const mobileClose = document.querySelector(".cp-mobile-close");
 function openMenu() {
     if (!mobileMenu || !mobileOverlay || !menuButton) return;
     mobileMenu.classList.add("active");
+    mobileMenu.setAttribute("aria-hidden", "false");
+    menuButton.setAttribute("aria-expanded", "true");
     mobileOverlay.classList.add("active");
     document.body.classList.add("menu-open");
     document.body.style.overflow = "hidden";
@@ -14,6 +16,8 @@ function openMenu() {
 function closeMenu() {
     if (!mobileMenu || !mobileOverlay) return;
     mobileMenu.classList.remove("active");
+    mobileMenu.setAttribute("aria-hidden", "true");
+    if (menuButton) menuButton.setAttribute("aria-expanded", "false");
     mobileOverlay.classList.remove("active");
     document.body.classList.remove("menu-open");
     document.body.style.overflow = "";

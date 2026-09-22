@@ -113,3 +113,154 @@
     .cp-tag{font-size:9px;padding:4px 8px}
     .cp-footer-logos img:nth-child(n){max-height:42px}
 }
+
+
+/* =====================================
+   MOBILE — ESCOLHER EXAME / AB
+   Mantém o desktop intacto
+===================================== */
+@media (max-width:768px){
+    /* Escolher exame */
+    .choose-exam-hero{
+        width:100%;
+        max-width:none!important;
+        padding:0;
+        text-align:left!important;
+    }
+    .choose-exam-hero .cp-badge{
+        margin-bottom:14px;
+    }
+    .choose-exam-title{
+        max-width:100%!important;
+        white-space:normal!important;
+        overflow-wrap:anywhere;
+        font-size:32px!important;
+        line-height:1.1!important;
+        letter-spacing:-.03em;
+        margin:0 0 14px!important;
+    }
+    .choose-exam-subtitle{
+        max-width:100%!important;
+        margin:0!important;
+        font-size:16px;
+        line-height:1.6;
+        color:#64748b;
+    }
+    .plans-grid{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+    .plan-card{
+        width:100%;
+        max-width:100%;
+        padding:22px 20px;
+        border-radius:20px;
+    }
+    .plan-card h3{
+        font-size:22px;
+        line-height:1.2;
+    }
+    .plan-card ul{
+        margin-bottom:20px;
+    }
+    .plan-price{
+        font-size:24px;
+        line-height:1.2;
+    }
+    .plan-card .cp-btn-primary{
+        display:flex;
+        width:100%;
+        min-height:52px;
+        align-items:center;
+        justify-content:center;
+        padding:13px 16px;
+        text-align:center;
+    }
+
+    /* A/B */
+    .ab-hero{
+        overflow:hidden;
+    }
+    .ab-hero .cp-badge{
+        max-width:100%;
+        white-space:normal;
+        line-height:1.35;
+        text-align:left;
+    }
+    .ab-title{
+        width:100%;
+        max-width:100%;
+        white-space:normal!important;
+        overflow-wrap:break-word;
+        font-size:31px;
+    }
+    .ab-subtitle{
+        width:100%;
+        max-width:100%;
+    }
+    .ab-search-bar,
+    .ab-search-bar .cp-select{
+        width:100%;
+        min-width:0;
+    }
+    .units-layout,
+    .units-map,
+    .units-list,
+    #lista-unidades{
+        width:100%;
+        min-width:0;
+    }
+    .units-map{
+        order:1;
+    }
+    .units-list{
+        order:2;
+    }
+    .units-header{
+        width:100%;
+    }
+    .units-sort{
+        max-width:100%;
+    }
+    .unit-card{
+        width:100%;
+        min-width:0;
+        overflow:hidden;
+    }
+    .unit-card > div{
+        min-width:0;
+        max-width:100%;
+    }
+    .unit-card h3,
+    .unit-card p,
+    .unit-card span,
+    .unit-address,
+    .unit-phone{
+        max-width:100%;
+        overflow-wrap:anywhere;
+    }
+    .unit-price{
+        width:100%;
+        max-width:100%;
+    }
+    .unit-price .cp-btn-primary{
+        display:flex;
+        min-height:52px;
+        align-items:center;
+        justify-content:center;
+    }
+}
+
+@media (max-width:390px){
+    .choose-exam-title,
+    .ab-title{
+        font-size:28px!important;
+    }
+    .plan-card{
+        padding:20px 18px;
+    }
+    .unit-card{
+        padding:18px;
+    }
+}

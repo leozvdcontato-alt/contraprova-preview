@@ -1,180 +1,115 @@
 /* =====================================
-   DESKTOP GRANDE
+   RESPONSIVE — somente sobrescritas
 ===================================== */
 
 @media (max-width:1100px){
-
-    .cp-hero-inner{
-        grid-template-columns:1fr;
-        gap:40px;
-    }
-
-    .cp-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .cp-footer-inner{
-        grid-template-columns:repeat(2,1fr);
-    }
-
+    .cp-hero-inner{grid-template-columns:1fr;gap:40px}
+    .cp-grid{grid-template-columns:repeat(2,1fr)}
+    .cp-footer-inner{grid-template-columns:repeat(2,1fr)}
+    .plans-grid{grid-template-columns:repeat(2,1fr)}
+    .units-layout{grid-template-columns:minmax(340px,.85fr) 1.15fr;gap:28px}
 }
-
-
-/* =====================================
-   TABLET
-===================================== */
 
 @media (max-width:900px){
-
+    .cp-section{padding:56px 28px}
+    .cp-process{grid-template-columns:1fr}
+    .cp-resource-grid{grid-template-columns:1fr}
+    .checkout-layout{grid-template-columns:1fr}
+    .checkout-summary{position:static}
+    .units-layout{grid-template-columns:1fr}
+    .units-map{position:static}
+    .units-map-frame{height:360px;min-height:0}
+    .units-list{max-height:none;overflow:visible;padding-right:0}
 }
-
-
-/* =====================================
-   MOBILE
-===================================== */
 
 @media (max-width:768px){
+    .cp-header-top{display:none}
+    .cp-header{padding:16px 18px}
+    .cp-header-inner{display:flex;justify-content:space-between;align-items:center}
+    .cp-logo img{height:42px}
+    .cp-nav{display:none}
+    .cp-menu-toggle{display:block}
 
-    .cp-hero{
-    padding:28px 18px;
+    .cp-hero{padding:28px 18px 44px}
+    .cp-hero-inner{grid-template-columns:1fr;gap:32px}
+    .cp-badge{font-size:11px;padding:9px 14px}
+    .cp-hero-content h1{font-size:32px;line-height:1.08;letter-spacing:-.03em;margin-bottom:14px}
+    .cp-hero-content>p{font-size:16px;line-height:1.65;margin:0 0 18px}
+    .hero-price{display:flex;flex-direction:column;margin:16px 0 20px;border-radius:18px;overflow:hidden;border:1px solid #dbe3ef}
+    .hero-price-card,.hero-payment-card{padding:18px;border:0;border-radius:0;max-width:none}
+    .hero-price-card{border-bottom:1px solid #dbe3ef}
+    .hero-price-value{font-size:26px}
+    .hero-payment-value{font-size:16px}
+    .cp-hero-buttons{margin:0 0 12px}
+    .hero-main-btn{display:flex;width:100%;justify-content:center;padding:14px 22px;min-height:54px}
+    .hero-benefits{flex-direction:column;gap:10px;margin-top:8px}
+    .hero-benefit{font-size:14px}
+    .hero-dot{width:8px;height:8px}
+
+    .cp-side-card{padding:26px 20px;border-radius:22px}
+    .hero-card-header h2{font-size:26px}
+    .hero-card-header p{font-size:14px;margin-bottom:16px}
+    .cp-side-item{padding:17px 46px 17px 17px;border-radius:18px}
+    .hero-card-title{font-size:17px}
+    .hero-card-subtitle{font-size:14px}
+    .hero-arrow{right:16px;bottom:16px;font-size:24px;margin-left:0}
+
+    .cp-section{padding:48px 18px}
+    .cp-title{font-size:29px;line-height:1.15}
+    .cp-grid{grid-template-columns:1fr}
+    .cp-process{grid-template-columns:1fr;gap:28px}
+    .cp-image-box{min-height:320px;padding:24px}
+    .cp-resource-grid{grid-template-columns:1fr;gap:20px;margin-top:28px}
+    .cp-resource-card{padding:24px}
+    .cp-footer{padding:36px 18px}
+    .cp-footer-inner{grid-template-columns:1fr;gap:26px}
+    .cp-footer-logos{gap:16px}
+    .cp-cta{padding:52px 18px}
+    .cp-cta h2{font-size:30px}
+
+    .plans-grid{grid-template-columns:1fr;gap:18px;margin-top:28px}
+    .plan-card{min-height:0;padding:24px}
+
+    /* AB mobile */
+    .ab-container{padding:0 18px}
+    .ab-hero{padding:38px 0 30px}
+    .ab-hero-header{margin:0 auto 24px}
+    .ab-title{font-size:34px;line-height:1.08;margin:16px 0 14px}
+    .ab-subtitle{font-size:16px;line-height:1.65}
+    .ab-search-bar{grid-template-columns:1fr;gap:12px}
+    .cp-select{height:54px}
+    .ab-results{padding:22px 0 48px}
+    .units-layout{display:flex;flex-direction:column;gap:24px}
+    .units-map{position:static;width:100%}
+    .units-map-frame{width:100%;height:260px;min-height:0;border-radius:18px}
+    .units-list{width:100%;max-height:none;overflow:visible;padding-right:0}
+    .units-header{flex-direction:column;align-items:flex-start;gap:12px;margin-bottom:4px}
+    .units-header h3{font-size:21px}
+    .units-sort{width:100%}
+    .unit-card{display:flex;flex-direction:column;gap:20px;padding:20px}
+    .unit-card h3{font-size:20px}
+    .unit-price{width:100%;align-items:flex-start;min-width:0}
+    .unit-price strong{font-size:30px}
+    .unit-price .cp-btn-primary{width:100%;text-align:center}
+
+    .info-grid{grid-template-columns:1fr;gap:16px;margin-top:28px}
+    .checkout-layout{grid-template-columns:1fr;gap:24px;margin-top:28px}
+    .checkout-summary{position:static;padding:22px}
+    .confirm-card{padding:24px}
+    .confirm-card h2{font-size:27px}
+    .confirm-row strong,.confirm-row div{font-size:18px}
+    .confirm-total strong{font-size:28px}
+
+    .cp-whatsapp{width:60px;height:60px;right:16px;bottom:16px}
+    .cp-whatsapp img{width:60px;height:60px}
 }
-
-.cp-hero-inner{
-    grid-template-columns:1fr;
-    gap:32px;
-}
-
-.cp-badge{
-    font-size:11px;
-    padding:10px 16px;
-}
-
-.cp-hero-content h1{
-    font-size:32px;
-    line-height:1.05;
-    letter-spacing:-.03em;
-    margin-bottom:18px;
-}
-
-.cp-hero-content > p{
-    font-size:16px;
-    line-height:1.7;
-    margin-bottom:12px;
-}
-
-.cp-side-card{
-    padding:28px 22px;
-}
-
-.hero-price{
-    display:flex;
-    flex-direction:column;
-    margin:16px 0 20px;
-    border-radius:18px;
-    overflow:hidden;
-    border:1px solid #dbe3ef;
-}
-
-.hero-price-card,
-.hero-payment-card{
-    padding:18px;
-}
-
-.hero-price-value{
-    font-size:26px;
-}
-
-.hero-payment-value{
-    font-size:16px;
-}
-.cp-header-top{
-    display:none;
-}
-
-.cp-header{
-    padding:16px 18px;
-}
-
-.cp-header-inner{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.cp-logo img{
-    height:42px;
-}
-
-.cp-nav{
-    display:none;
-}
-
-.cp-menu-toggle{
-    display:block;
-}
-
-.hero-main-btn{
-    display:flex;
-    width:100%;
-    justify-content:center;
-}
-
-.hero-benefits{
-    flex-direction:column;
-    gap:12px;
-    margin-top:20px;
-}
-
-.hero-benefit{
-    font-size:15px;
-}
-
-.hero-dot{
-    width:8px;
-    height:8px;
-}
-
-.cp-hero-buttons{
-    margin:0 0 12px;
-}
-
-.hero-benefits{
-    margin-top:8px;
-}
-
-.hero-main-btn{
-    padding:14px 22px;
-    min-height:54px;
-}
-
-.cp-whatsapp{
-    width:64px;
-    height:64px;
-    right:16px;
-    bottom:16px;
-}
-
-.cp-whatsapp img{
-    width:64px;
-    height:64px;
-}
-
-/* =====================================
-   MOBILE PEQUENO
-===================================== */
-
-@media (max-width:640px){
-
-}
-
-
-/* =====================================
-   TELAS MUITO PEQUENAS
-===================================== */
 
 @media (max-width:480px){
-
-
-}
-
+    .cp-hero-content h1{font-size:29px}
+    .ab-title{font-size:30px}
+    .cp-title{font-size:27px}
+    .cp-side-card{padding:22px 16px}
+    .hero-card-subtitle{display:none}
+    .cp-tag{font-size:9px;padding:4px 8px}
+    .cp-footer-logos img:nth-child(n){max-height:42px}
 }

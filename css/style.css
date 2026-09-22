@@ -1836,3 +1836,64 @@ html {
 body.menu-open .cp-whatsapp {
     display: none;
 }
+
+/* TODO EXECUTION — desktop refinements */
+
+/* AB: desktop search/result experience */
+.ab-results{
+    background:#fff;
+    padding:32px 0 72px;
+}
+.units-layout{
+    display:grid;
+    grid-template-columns:minmax(420px,560px) minmax(0,1fr);
+    gap:40px;
+    align-items:start;
+    margin-top:0;
+}
+.units-map{
+    position:sticky;
+    top:120px;
+    align-self:start;
+}
+.units-list{
+    width:100%;
+    max-height:calc(100vh - 150px);
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    padding-right:10px;
+    scrollbar-width:thin;
+}
+.units-header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:24px;
+    margin-bottom:20px;
+}
+.units-sort{flex-shrink:0}
+.unit-card{min-width:0}
+.unit-price .cp-btn-primary{display:inline-flex;justify-content:center}
+
+/* Shared focus states */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible{
+    outline:3px solid rgba(7,169,220,.45);
+    outline-offset:3px;
+}
+
+/* Subtle motion, disabled for users who request reduced motion */
+.cp-card,.plan-card,.cp-side-item,.cp-btn-primary,.cp-news-item{
+    will-change:transform;
+}
+@media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{
+        animation-duration:.01ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.01ms!important;
+    }
+}

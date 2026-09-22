@@ -264,3 +264,103 @@
         padding:18px;
     }
 }
+
+
+/* =====================================
+   MOBILE HOTFIX — fluxo e sobreposições
+===================================== */
+@media (max-width:768px){
+    body{overflow-x:hidden}
+
+    /* A/B: remove a altura desktop que fazia a lista invadir as seções seguintes */
+    .units-list{
+        height:auto!important;
+        max-height:none!important;
+        overflow:visible!important;
+    }
+    #lista-unidades{
+        display:flex;
+        flex-direction:column;
+        gap:16px;
+    }
+    .unit-card{
+        margin:0!important;
+        position:relative;
+    }
+
+    /* Seções posteriores sempre voltam ao fluxo normal */
+    .ab-results,
+    .cp-section,
+    .cp-footer{
+        position:relative;
+        clear:both;
+    }
+    .ab-results{overflow:visible}
+
+    /* Informações importantes */
+    .info-grid{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+    .info-card{
+        width:100%;
+        min-height:0;
+        padding:20px;
+    }
+    .info-card h3{font-size:20px}
+    .info-card p{font-size:15px;line-height:1.6}
+
+    /* Footer: logos não podem atravessar as colunas/textos */
+    .cp-footer{overflow:hidden}
+    .cp-footer-inner{width:100%;min-width:0}
+    .cp-footer-inner>div{min-width:0}
+    .cp-footer-logos{
+        width:100%;
+        max-width:100%;
+        overflow-x:auto;
+        gap:18px;
+    }
+    .cp-footer-logos img{
+        max-width:140px;
+        height:auto!important;
+        max-height:44px!important;
+    }
+
+    /* CTA / atendimento */
+    .cp-cta .cp-hero-buttons{
+        display:flex;
+        justify-content:center!important;
+        width:100%;
+        margin:24px 0 0;
+    }
+    .cp-cta .cp-btn-primary,
+    .cp-cta .cp-btn-secondary{
+        width:100%;
+        max-width:420px;
+        min-height:54px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border:0;
+        border-radius:14px;
+        padding:14px 20px;
+        background:#0765ad;
+        color:#fff;
+        font:800 16px/1.2 'Poppins',sans-serif;
+        text-decoration:none;
+        cursor:pointer;
+    }
+
+    /* Botão flutuante sem encobrir tanto conteúdo */
+    .cp-whatsapp{
+        width:56px;
+        height:56px;
+        right:14px;
+        bottom:18px;
+    }
+    .cp-whatsapp img{
+        width:56px!important;
+        height:56px!important;
+    }
+}

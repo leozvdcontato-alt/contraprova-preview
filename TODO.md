@@ -16,40 +16,52 @@
 ## Página AB
 
 ### Desktop
-- [ ] Ajustar espaçamento entre Hero e resultados
-- [ ] Refinar layout estilo Airbnb
-- [ ] Revisar largura do mapa
-- [ ] Restaurar rolagem independente da lista
-- [ ] Revisar alinhamentos gerais
+- [x] Ajustar espaçamento entre Hero e resultados
+- [x] Refinar layout estilo Airbnb
+- [x] Revisar largura do mapa
+- [x] Restaurar rolagem independente da lista
+- [x] Revisar alinhamentos gerais
 
 ### Mobile
-- [ ] Refazer layout da página
-- [ ] Empilhar filtros corretamente
-- [ ] Ajustar mapa
-- [ ] Ajustar lista de unidades
-- [ ] Revisar cards
-- [ ] Ajustar WhatsApp
+- [x] Refazer layout da página
+- [x] Empilhar filtros corretamente
+- [x] Ajustar mapa
+- [x] Ajustar lista de unidades
+- [x] Revisar cards
+- [x] Ajustar WhatsApp
 
 ## Páginas restantes
 
-- [ ] Empresas
-- [ ] Concursos
-- [ ] Checkout
-- [ ] Confirmação
+- [x] Empresas
+- [x] Concursos
+- [x] Checkout
+- [x] Confirmação
 
 ## Revisão geral
 
-- [ ] Padronizar espaçamentos
-- [ ] Revisar tipografia
-- [ ] Revisar componentes
-- [ ] Revisar responsividade
-- [ ] Testar desktop
-- [ ] Testar mobile
+- [x] Padronizar espaçamentos
+- [x] Revisar tipografia
+- [x] Revisar componentes
+- [x] Revisar responsividade
+- [ ] Testar desktop manualmente no navegador
+- [ ] Testar mobile manualmente no navegador
 
 ## Performance
 
-- [ ] SEO
-- [ ] PageSpeed
-- [ ] Acessibilidade
-- [ ] Microinterações
-- [ ] Revisão final
+- [x] SEO básico
+- [ ] PageSpeed (exige medição da página publicada)
+- [x] Acessibilidade básica
+- [x] Microinterações
+- [ ] Revisão final após testes visuais
+
+---
+
+## Estado da execução
+
+Implementação do TODO aplicada ao código em 22/09/2026.
+
+Pendente apenas o que depende de validação visual/medição da versão publicada:
+- teste desktop;
+- teste mobile;
+- PageSpeed;
+- revisão final após esses testes.

@@ -1958,3 +1958,11 @@ body{background:#f4f7f9;color:var(--cp-ink)}
 .unit-card:hover{border-color:rgba(0,74,139,.3)!important;box-shadow:0 14px 32px rgba(16,34,53,.06)!important}
 .cp-info{background:#f3f8fc;border-radius:6px}
 .cp-btn-whatsapp{border-radius:10px!important;box-shadow:none}
+
+
+/* Faixa de confiança abaixo do hero */
+.cp-trust-strip{background:#fff;border-bottom:1px solid var(--cp-line);padding:22px 0}
+.cp-trust-inner{max-width:1320px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:42px}
+.cp-trust-label{font-size:12px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#667789;white-space:nowrap}
+.cp-trust-logos{display:flex;align-items:center;justify-content:flex-end;gap:38px;flex:1}
+.cp-trust-logos img{width:118px;height:42px;object-fit:contain;filter:grayscale(1) sepia(1) hue-rotate(166deg) saturate(5) brightness(.62);opacity:.82}

@@ -374,3 +374,12 @@
 .cp-cta-buttons .cp-btn-primary,.cp-cta-buttons .cp-btn-whatsapp,.cp-hero-buttons .cp-btn-whatsapp{width:100%;max-width:420px;min-height:54px;padding:14px 20px}
 .cp-footer a{color:inherit;text-decoration:none}
 }
+
+
+@media(max-width:768px){
+  .cp-trust-strip{padding:20px 0}
+  .cp-trust-inner{padding:0 18px;flex-direction:column;gap:16px}
+  .cp-trust-label{white-space:normal;text-align:center}
+  .cp-trust-logos{width:100%;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .cp-trust-logos img{width:100%;height:34px}
+}
